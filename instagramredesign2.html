@@ -88,10 +88,17 @@
         </div>
     </div>
   
-    <img src="images/lisa.jpg" alt="lisa">
-      <div class="insta-img">
-        <img src="https://www.sashademo.com/images/lisa.jpg" alt="Lisauser" />
-      </div>
+
+      <section class="insta-img">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="./images/lisa-large.jpg" />
+          <source media="(min-width: 700px)" srcset="./images/lisa-medium.jpg" />
+          <source media="(min-width: 0px)" srcset="./images/lisa-small.jpg" />
+          <img src="./images/lisa-small.jpg" class="insta-image" alt="lisa-small" />
+        </picture>
+
+      </section>
+      
       <div class="article-card">
         <div class="h3-insta">Step #2: User Flow</div>
         <p>
@@ -104,12 +111,7 @@
         </p>
       </div>
   
-      <div class="insta-img">
-        <img
-          src="https://www.sashademo.com/images/userflow.jpg"
-          alt="userflowinsta1"
-        />
-      </div>
+      
       <div class="article-card">
         <div class="h3-insta">Step #3: Branding</div>
         <p>

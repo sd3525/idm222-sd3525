@@ -1,4 +1,398 @@
 body {
+  margin: 0;
+  padding: 0;
+  background: rgb(31, 31, 31);
+  color: #cdcdcd;
+  overflow-x: hidden;
+}
+
+
+
+/* nav bar */
+
+#menuToggle {
+  display: block;
+  position: relative;
+  top: 35px;
+  left: 22px;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a {
+  text-decoration: none;
+  color: #232323;
+
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover {
+  color: #fff;
+}
+
+#menuToggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+
+  cursor: pointer;
+
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+
+  background: #f19089;
+  border-radius: 3px;
+
+  z-index: 1;
+
+  transform-origin: 4px 0px;
+
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  background: 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+}
+
+#menuToggle span:first-child {
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu {
+  position: absolute;
+  width: 100%;
+  padding: 50px;
+  padding-top: 125px;
+  top: -100px;
+  left: -35px;
+
+  background: #f19089;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+#menu li {
+  padding: 12px 0;
+  font-size: 137.5%;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul {
+  transform: none;
+}
+
+/*
+General
+*/
+
+
+/*
+  .box-insta {
+  border: 2px solid #f19089;
+  width: 36.62%;
+  margin-left: 20px;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+.box-insta2 {
+  border: 2px solid #f19089;
+  width: 36.62%;
+  margin-left: 20px;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+hr {
+  width: 100%;
+  height: 1px;
+  width: 36.62%;
+  margin-right: 100px;
+  margin-left: -34px;
+  background-color: #f19089;
+}
+
+*/
+
+
+p {
+  font-size: 100%;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.p-lone {
+  margin-top: 1rem;
+}
+
+html {
+  width: 100vw;
+}
+
+body {
+  margin: 0;
+  font-family: "JetBrains Mono", monospace;
+  background-color: rgb(31, 31, 31);
+  color: rgb(255, 255, 255);
+}
+
+.article-card {
+  /* width: 100%; */
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  background-color: rgb(32, 32, 32);
+  justify-content: center;
+}
+
+.article-card2 {
+  /* width: 100%; */
+  display: flex;
+  flex-direction: column;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  padding-bottom: 2rem;
+  background-color: rgb(32, 32, 32);
+  justify-content: center;
+}
+
+video {
+    padding: 2rem;
+
+}
+
+
+
+.me {
+  padding: 0 2rem;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 2rem;
+  margin-bottom: 1.5rem;
+  width: 0.68%;
+}
+
+.container2 {
+  width: 3.91%;
+  height: 40px;
+  position: absolute;
+  top: 29px;
+  right: 18px;
+  z-index: 50;
+}
+
+.Contact {
+  font-size: 150%;
+  padding-top: 3.5rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  color: rgb(98, 137, 232);
+}
+
+.contact-res {
+  font-size: 150%;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  color: rgb(98, 137, 232);
+}
+
+.mail {
+  padding-left: 2rem;
+  padding-bottom: 1.5rem;
+}
+
+.p-vid {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.conclusion {
+  font-size: 150%;
+  margin-bottom: 0.5rem;
+  margin-top: 3rem;
+  color: #ffb2ad;
+}
+
+
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.overview {
+  font-size: 150%;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  color: #ffb2ad;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  margin-left: 1rem;
+  margin-top: 1.5rem;
+  background-color: #ffb2ad;
+}
+
+.word-spacing {
+  font-size: 125%;
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  justify-content: space-around;
+  min-width: 20.51%;
+  max-width: 26.37%;
+}
+
+.Title {
+  font-size: 250%;
+  padding-left: 1rem;
+  margin-top: 4rem;
+}
+
+.title2 {
+  font-size: 150%;
+  padding-left: 1rem;
+  margin-top: 4rem;
+  margin-bottom: 0.5rem;
+  color: #ffb2ad;
+}
+
+
+.insta-title {
+  padding-top: 3rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.insta-title2 {
+  padding-bottom: 3rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.cs-img {
+  padding-top: 3.5rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.p-insta {
+  margin-bottom: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.p-insta2 {
+  margin-bottom: 1rem;
+  margin-top: 0.75rem;
+}
+
+.p-instadif {
+  margin-bottom: 1.5rem;
+  margin-top: 1rem;
+}
+
+.h2-insta {
+  font-size: 150%;
+  margin-bottom: 0.5rem;
+  color: #ffb2ad;
+}
+
+.h3-insta {
+  font-size: 125%;
+  margin-top: 1rem;
+  color: rgb(98, 137, 232);
+}
+
+@media screen and (min-width: 700px) {
+  section.insta-img img {
+    width: 700px;
+    margin: 0 auto;
+    display: block; 
+  }
+}
+
+@media screen and (min-width: 0px) {
+  section.insta-img img {
+    width: 500px;
+    margin: 0 auto;
+    display: block;
+    padding: 0 auto;
+  }
+}
+
+
+
+
+
+
+
+
+
+/*
+
+body {
     margin: 0;
     padding: 0;
     background: rgb(31, 31, 31);
@@ -9,6 +403,8 @@ body {
 
 
   /* nav bar */
+
+  /*
 
   #menuToggle {
     display: block;
@@ -43,13 +439,19 @@ body {
   
     opacity: 0; /* hide this */
     z-index: 2; /* and place it over the hamburger */
+
+    /*
   
     -webkit-touch-callout: none;
   }
+
+  
   
   /*
    * Just a quick hamburger
    */
+
+   /*
   #menuToggle span {
     display: block;
     width: 33px;
@@ -80,6 +482,8 @@ body {
    * Transform all the slices of hamburger
    * into a crossmark.
    */
+
+   /*
   #menuToggle input:checked ~ span {
     opacity: 1;
     transform: rotate(45deg) translate(-2px, -1px);
@@ -89,6 +493,8 @@ body {
   /*
    * But let's hide the middle one.
    */
+
+   /*
   #menuToggle input:checked ~ span:nth-last-child(3) {
     opacity: 0;
     transform: rotate(0deg) scale(0.2, 0.2);
@@ -97,6 +503,8 @@ body {
   /*
    * Ohyeah and the last one should go the other direction
    */
+
+   /*
   #menuToggle input:checked ~ span:nth-last-child(2) {
     transform: rotate(-45deg) translate(0, -1px);
   }
@@ -105,6 +513,8 @@ body {
    * Make this absolute positioned
    * at the top left of the screen
    */
+
+   /*
   #menu {
     position: absolute;
     width: 100%;
@@ -118,6 +528,7 @@ body {
     -webkit-font-smoothing: antialiased;
     /* to stop flickering of text in safari */
   
+    /*
     transform-origin: 0% 0%;
     transform: translate(-100%, 0);
   
@@ -132,6 +543,8 @@ body {
   /*
    * And let's slide it in from the left
    */
+
+   /*
   #menuToggle input:checked ~ ul {
     transform: none;
   }
@@ -139,6 +552,8 @@ body {
   /*
   General
   */
+
+  /*
 
   @media screen and (min-width: 700px) {
 
@@ -212,6 +627,8 @@ body {
 
   .article-card {
     /* width: 100%; */
+
+    /*
     display: flex;
     flex-direction: column;
     padding: 2rem;
@@ -221,6 +638,8 @@ body {
 
   .article-card2 {
     /* width: 100%; */
+
+    /*
     display: flex;
     flex-direction: column;
     padding-right: 2rem;
@@ -391,3 +810,5 @@ body {
     margin-top: 1rem;
     color: rgb(98, 137, 232);
   }
+
+  /*
