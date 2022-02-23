@@ -316,13 +316,6 @@ video {
   align-items: center;
 }
 
-.overview {
-  font-size: 150%;
-  float: right;
-  margin-top: 1rem;
-  margin-bottom: 0.5rem;
-  color: #ffb2ad;
-}
 
 .overview2 {
   font-size: 150%;
@@ -355,9 +348,9 @@ video {
   max-width: 26.37%;
 }
 
-.Title {
-  font-size: 250%;
-  padding-left: 1rem;
+.title {
+  font-size: 400%;
+  padding-left: 2rem;
   margin-top: 4rem;
 }
 
@@ -366,6 +359,12 @@ video {
   padding-left: 1rem;
   margin-top: 4rem;
   margin-bottom: 0.5rem;
+  color: #ffb2ad;
+}
+
+.overview {
+  font-size: 230%;
+  margin-top: 1rem;
   color: #ffb2ad;
 }
 
@@ -396,6 +395,8 @@ video {
 .p-insta2 {
   margin-bottom: 1rem;
   margin-top: 0.75rem;
+  padding-left: 15%;
+  padding-right: 10%;
 }
 
 .p-instadif {
@@ -411,9 +412,13 @@ video {
 }
 
 .h3-insta {
-  font-size: 125%;
+  font-size: 175%;
   margin-top: 1rem;
+  margin-bottom: 1.25rem;
   color: rgb(98, 137, 232);
+  padding-top: 40px;
+  padding-left: 15%;
+  padding-right: 10%;
 }
 
 
@@ -488,6 +493,9 @@ video {
   justify-content: center;
  }
 
+
+}
+
 /*
 
 Attempt at trying to make the vid and paragraphs align vertically in mobile view
@@ -524,7 +532,11 @@ Attempt at trying to make the vid and paragraphs align vertically in mobile view
 }
 
 
+
+
 @media screen and (min-width: 700px) {
+
+
   section.insta-img img {
     width: 450px;
     margin: 0 auto;
@@ -561,7 +573,7 @@ Attempt at trying to make the vid and paragraphs align vertically in mobile view
   }
 
   section.insta-img6 img {
-    width: 700px;
+    width: 900px;
     margin: 0 auto;
     display: block;
     padding: 0 auto;
@@ -609,6 +621,7 @@ Attempt at trying to make the vid and paragraphs align vertically in mobile view
   padding: 2rem;
   background-color: rgb(32, 32, 32);
 }
+}
 
 /*
 
@@ -635,6 +648,7 @@ Attempt at trying to make the vid and paragraphs align vertically in mobile view
 
 
 @media screen and (min-width: 1200px) {
+
   section.insta-img img {
     width: 700px;
     margin: 0 auto;
