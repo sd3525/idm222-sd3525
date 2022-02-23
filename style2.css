@@ -6,6 +6,9 @@ body {
   overflow-x: hidden;
 }
 
+.img {
+  width: auto;
+}
 
 
 /* nav bar */
@@ -177,7 +180,9 @@ p {
 }
 
 .p-lone {
+  margin-bottom: 1.5rem;
   margin-top: 1rem;
+  width: 50%;
 }
 
 html {
@@ -191,13 +196,28 @@ body {
   color: rgb(255, 255, 255);
 }
 
+.top {
+  flex-direction: column;
+}
+
+.headtitle {
+  flex-direction: column;
+}
+
+.headdescrip {
+  flex-direction: column;
+  padding-left: 50px;
+  padding-right: 75px;
+
+}
+
 .article-card {
   /* width: 100%; */
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
   padding: 2rem;
   background-color: rgb(32, 32, 32);
-  justify-content: center;
 }
 
 .article-card2 {
@@ -216,6 +236,19 @@ video {
 
 }
 
+.vid1 {
+   float: left;
+   padding-left: 400px;
+   display: flex;
+   justify-content: center;
+}
+
+.vid2 {
+  padding-left: 150px;
+  display: flex;
+  justify-content: center;
+}
+
 
 
 .me {
@@ -230,6 +263,7 @@ video {
   width: 0.68%;
 }
 
+/*
 .container2 {
   width: 3.91%;
   height: 40px;
@@ -238,6 +272,8 @@ video {
   right: 18px;
   z-index: 50;
 }
+
+*/
 
 .Contact {
   font-size: 150%;
@@ -282,10 +318,24 @@ video {
 
 .overview {
   font-size: 150%;
+  float: right;
   margin-top: 1rem;
   margin-bottom: 0.5rem;
   color: #ffb2ad;
 }
+
+.overview2 {
+  font-size: 150%;
+  float: left;
+  line-height: 100px;
+  padding-right: 950px;
+  padding-left: 50px;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  color: #ffb2ad;
+}
+
+
 
 .logo {
   width: 50px;
@@ -351,6 +401,7 @@ video {
 .p-instadif {
   margin-bottom: 1.5rem;
   margin-top: 1rem;
+  width: 75%;
 }
 
 .h2-insta {
@@ -365,22 +416,320 @@ video {
   color: rgb(98, 137, 232);
 }
 
-@media screen and (min-width: 700px) {
-  section.insta-img img {
-    width: 700px;
-    margin: 0 auto;
-    display: block; 
-  }
-}
 
 @media screen and (min-width: 0px) {
   section.insta-img img {
+    width: 300px;
+    margin: 0 auto;
+    display: block;
+    padding: 0 auto;
+  }
+
+  section.insta-img2 img {
     width: 500px;
     margin: 0 auto;
     display: block;
     padding: 0 auto;
   }
+
+  section.insta-img3 img {
+    width: 350px;
+    margin: 0 auto;
+    display: block;
+    padding: 0 auto;
+  }
+
+  section.insta-img4 img {
+    width: 500px;
+    margin: 0 auto;
+    display: block;
+    padding: 0 auto;
+  }
+
+  section.insta-img5 img {
+    width: 500px;
+    margin: 0 auto;
+    display: block;
+    padding: 0 auto;
+  }
+
+  section.insta-img6 img {
+    width: 500px;
+    margin: 0 auto;
+    display: block;
+    padding: 0 auto;
+  }
+
+  section.insta-img7 img {
+    width: 500px;
+    margin: 0 auto;
+    display: block;
+    padding: 0 auto;
+  }
+
+  .box-insta2 {
+    border: 2px solid #f19089;
+    width: 546.9px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 35px;
+    margin-bottom: 35px; 
+  }
+
+  .overview2 {
+    font-size: 150%;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    color: #ffb2ad;
 }
+
+  .vid1 {
+    display: flex;
+  justify-content: center;
+ }
+
+/*
+
+Attempt at trying to make the vid and paragraphs align vertically in mobile view
+
+.vid3 {
+  padding-left: 150px;
+  display: flex;
+  justify-content: center;
+}
+
+.article-card3 {
+  display: flex;
+  flex-direction: column;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  padding-bottom: 2rem;
+  background-color: rgb(32, 32, 32);
+  justify-content: center;
+}
+
+.overview3 {
+  font-size: 150%;
+  float: left;
+  line-height: 100px;
+  padding-right: 950px;
+  padding-left: 50px;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  color: #ffb2ad;
+}
+
+ */
+  
+}
+
+
+@media screen and (min-width: 700px) {
+  section.insta-img img {
+    width: 450px;
+    margin: 0 auto;
+    display: block; 
+  }
+
+  section.insta-img2 img {
+    width: 700px;
+    margin: 0 auto;
+    display: block;
+    padding: 0 auto;
+  }
+
+  section.insta-img3 img {
+    width: 550px;
+    margin: 0 auto;
+    display: block;
+    padding: 0 auto;
+
+  }
+
+    section.insta-img4 img {
+      width: 700px;
+      margin: 0 auto;
+      display: block;
+      padding: 0 auto;
+  }
+
+  section.insta-img5 img {
+    width: 700px;
+    margin: 0 auto;
+    display: block;
+    padding: 0 auto;
+  }
+
+  section.insta-img6 img {
+    width: 700px;
+    margin: 0 auto;
+    display: block;
+    padding: 0 auto;
+  }
+
+  section.insta-img7 img {
+    width: 700px;
+    margin: 0 auto;
+    display: block;
+    padding: 0 auto;
+  }
+
+  .box-insta2 {
+    border: 2px solid #f19089;
+    width: 546.9px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 35px;
+    margin-bottom: 35px; 
+  }
+
+  .overview2 {
+  font-size: 150%;
+  float: left;
+  line-height: 100px;
+  padding-right: 700px;
+  padding-left: 50px;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  color: #ffb2ad;
+}
+
+.vid1 {
+  float: left;
+  padding-left: 400px;
+  display: flex;
+  justify-content: center;
+}
+
+.article-card {
+  /* width: 100%; */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem;
+  background-color: rgb(32, 32, 32);
+}
+
+/*
+
+Attempt at trying to make the vid and paragraphs align vertically in mobile view
+
+.vid3 {
+ display: none;
+}
+
+.article-card3 {
+  display: none;
+}
+ 
+
+.overview3 {
+  display: none;
+
+}
+
+*/
+
+}
+
+
+
+@media screen and (min-width: 1200px) {
+  section.insta-img img {
+    width: 700px;
+    margin: 0 auto;
+    display: block; 
+  }
+
+  section.insta-img2 img {
+    width: 900px;
+    margin: 0 auto;
+    display: block;
+    padding: 0 auto;
+  }
+
+  section.insta-img3 img {
+    width: 900px;
+    margin: 0 auto;
+    display: block;
+    padding: 0 auto;
+
+  }
+
+    section.insta-img4 img {
+      width: 900px;
+      margin: 0 auto;
+      display: block;
+      padding: 0 auto;
+  }
+
+  section.insta-img5 img {
+    width: 900px;
+    margin: 0 auto;
+    display: block;
+    padding: 0 auto;
+  }
+
+  section.insta-img6 img {
+    width: 900px;
+    margin: 0 auto;
+    display: block;
+    padding: 0 auto;
+  }
+
+  section.insta-img7 img {
+    width: 900px;
+    margin: 0 auto;
+    display: block;
+    padding: 0 auto;
+  }
+
+  .overview2 {
+    font-size: 150%;
+    float: left;
+    line-height: 100px;
+    padding-right: 1,000px;
+    padding-left: 50px;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    color: #ffb2ad;
+  }
+
+  .box-insta2 {
+    border: 2px solid #f19089;
+    width: 630px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 35px;
+    margin-bottom: 35px; 
+  }
+
+  .headdescrip {
+    flex-direction: column;
+    padding-left: 200px;
+    padding-right: 10px;
+  
+  }
+
+  /*
+
+Attempt at trying to make the vid and paragraphs align vertically in mobile view
+
+  .vid3 {
+    display: none;
+   }
+   
+   .article-card3 {
+     display: none;
+   }
+    
+   
+   .overview3 {
+     display: none;
+
+     */
+}
+
 
 
 
