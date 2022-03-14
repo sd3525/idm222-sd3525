@@ -1,13 +1,20 @@
 body {
   margin: 0;
   padding: 0;
-  background: rgb(31, 31, 31);
-  color: #cdcdcd;
+  background: #151515;
+  color: white;
   overflow-x: hidden;
+  font-family: bely-display,sans-serif;
+font-weight: 400;
+font-style: normal;
 }
 
 .img {
   width: auto;
+}
+
+.image {
+  padding-left: 40%;
 }
 
 
@@ -60,7 +67,7 @@ body {
   margin-bottom: 5px;
   position: relative;
 
-  background: #f19089;
+  background: rgb(197, 132, 235);
   border-radius: 3px;
 
   z-index: 1;
@@ -86,7 +93,7 @@ body {
 #menuToggle input:checked ~ span {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323;
+  background: rgb(197, 132, 235);
 }
 
 /*
@@ -116,7 +123,7 @@ body {
   top: -100px;
   left: -35px;
 
-  background: #f19089;
+  background: #1144c1;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
@@ -179,7 +186,8 @@ p {
   margin-bottom: 1rem;
 }
 
-.p-lone {
+
+.p__lone {
   margin-bottom: 1.5rem;
   margin-top: 1rem;
   width: 50%;
@@ -191,9 +199,9 @@ html {
 
 body {
   margin: 0;
-  font-family: "JetBrains Mono", monospace;
-  background-color: rgb(31, 31, 31);
-  color: rgb(255, 255, 255);
+  font-family: tenez,sans-serif;
+  background-color: #151515;
+  color:  white;
 }
 
 .top {
@@ -211,24 +219,39 @@ body {
 
 }
 
-.article-card {
+.paradetails {
+  flex-direction: column;
+  padding-left: 100%;
+
+}
+
+.number {
+  margin-top: 1rem;
+  color: #a32b07;
+  padding-top: 40px;
+  font-size: 550%;
+  justify-content: flex-start;
+  display: flex;
+  flex-direction: row;
+}
+
+.article__card {
   /* width: 100%; */
   display: flex;
   justify-content: center;
   align-items: flex-start;
   padding: 2rem;
-  background-color: rgb(32, 32, 32);
+  background-color: #151515;
 }
 
-.article-card2 {
+.article__card2 {
   /* width: 100%; */
-  display: flex;
-  flex-direction: column;
+  flex-direction: row;
   padding-right: 2rem;
   padding-left: 2rem;
   padding-bottom: 2rem;
-  background-color: rgb(32, 32, 32);
-  justify-content: center;
+  background-color: #151515;
+  justify-content: space-between;
 }
 
 video {
@@ -237,14 +260,11 @@ video {
 }
 
 .vid1 {
-   float: left;
-   padding-left: 400px;
    display: flex;
    justify-content: center;
 }
 
 .vid2 {
-  padding-left: 150px;
   display: flex;
   justify-content: center;
 }
@@ -280,14 +300,15 @@ video {
   padding-top: 3.5rem;
   padding-bottom: 1rem;
   padding-left: 2rem;
-  color: rgb(98, 137, 232);
+  color: #1144c1;
 }
 
-.contact-res {
+.contact__res {
   font-size: 150%;
+  padding-top: 3%;
   padding-bottom: 1rem;
   padding-left: 2rem;
-  color: rgb(98, 137, 232);
+  color: rgb(197, 132, 235);
 }
 
 .mail {
@@ -295,13 +316,13 @@ video {
   padding-bottom: 1.5rem;
 }
 
-.p-vid {
+.p__vid {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
 
 .conclusion {
-  font-size: 150%;
+  font-size: 3rem;
   margin-bottom: 0.5rem;
   margin-top: 3rem;
   color: #ffb2ad;
@@ -318,14 +339,13 @@ video {
 
 
 .overview2 {
-  font-size: 150%;
-  float: left;
+  font-size: 3rem;
   line-height: 100px;
   padding-right: 950px;
   padding-left: 50px;
   margin-top: 1rem;
   margin-bottom: 0.5rem;
-  color: #ffb2ad;
+  color: rgb(197, 132, 235);
 }
 
 
@@ -338,8 +358,8 @@ video {
   background-color: #ffb2ad;
 }
 
-.word-spacing {
-  font-size: 125%;
+.word__spacing {
+  font-size: 2rem;
   display: flex;
   flex-direction: row;
   flex: 1;
@@ -349,143 +369,211 @@ video {
 }
 
 .title {
-  font-size: 400%;
+  font-size: 5rem;
   padding-left: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 3%;
   margin-top: 4rem;
+  color: azure;
 }
 
 .title2 {
-  font-size: 150%;
+  font-size: 3rem;
   padding-left: 1rem;
   margin-top: 4rem;
   margin-bottom: 0.5rem;
-  color: #ffb2ad;
-}
-
-.overview {
-  font-size: 230%;
-  margin-top: 1rem;
-  color: #ffb2ad;
+  color: azure;
 }
 
 
-.insta-title {
+.insta__title {
   padding-top: 3rem;
   padding-right: 1rem;
   padding-left: 1rem;
 }
 
-.insta-title2 {
+.insta__title2 {
   padding-bottom: 3rem;
   padding-right: 1rem;
   padding-left: 1rem;
 }
 
-.cs-img {
+.cs__img {
   padding-top: 3.5rem;
   padding-right: 1rem;
   padding-left: 1rem;
 }
 
-.p-insta {
+.p__insta {
   margin-bottom: 0.75rem;
   margin-top: 0.75rem;
 }
 
-.p-insta2 {
+.p__insta2 {
   margin-bottom: 1rem;
   margin-top: 0.75rem;
-  padding-left: 15%;
+  padding-left: 10%;
   padding-right: 10%;
 }
 
-.p-instadif {
+.p__instadif {
   margin-bottom: 1.5rem;
   margin-top: 1rem;
   width: 75%;
 }
 
-.h2-insta {
+.h2__insta {
   font-size: 150%;
   margin-bottom: 0.5rem;
-  color: #ffb2ad;
-}
-
-.h3-insta {
-  font-size: 175%;
-  margin-top: 1rem;
-  margin-bottom: 1.25rem;
-  color: rgb(98, 137, 232);
-  padding-top: 40px;
-  padding-left: 15%;
-  padding-right: 10%;
+  color: #a32b07;
 }
 
 
 @media screen and (min-width: 0px) {
-  section.insta-img img {
+
+  .title {
+    background: rgb(2,0,36);
+background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(17,68,193,1) 28%, rgba(163,43,7,1) 68%, rgba(0,0,0,1) 100%);
+    padding-top: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 4rem;
+    font-family: bely-display,sans-serif;
+    font-weight: 400;
+  font-style: normal;
+  line-height: 6rem;
+  }
+
+  .box__heading {
+    color: rgb(197, 132, 235);
+    font-size: 2rem;
+    font-family: bely-display,sans-serif;
+font-weight: 400;
+font-style: normal;
+padding-bottom: 0.25rem;
+
+  }
+
+  .box1 {
+    font-size: 1rem;
+    font-family: muli,sans-serif;
+font-weight: 400;
+font-style: normal;
+padding-left: 1rem;
+
+  }
+
+  .h3__insta {
+    text-align: center;
+    font-size: 2.25rem;
+    color: rgba(232,54,0,1);
+    padding-left: 1rem;
+     font-family: bely-display,sans-serif;
+    font-weight: 400;
+  font-style: normal;
+    font-style: normal;
+  }
+
+  .p__insta2 {
+    text-align: justify;
+    font-family: muli,sans-serif;
+    font-weight: 400;
+    font-style: normal;    
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .overview {
+    text-align: center;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(232,54,0,1) 27%, rgba(17,68,193,1) 56%, rgba(232,54,0,1) 79%, rgba(0,0,0,1) 100%);
+    font-size: 3rem;
+    margin-top: 1.5rem;
+    color: white;
+    font-family: bely-display,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    height: auto;
+    width: 100%;
+  }
+
+  .conclusion2 {
+    text-align: center;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(232,54,0,1) 27%, rgba(17,68,193,1) 56%, rgba(232,54,0,1) 79%, rgba(0,0,0,1) 100%);
+    font-size: 3rem;
+    margin-bottom: 40px;
+    color: white;
+    font-family: bely-display,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    height: auto;
+    width: 100%;
+  }
+
+  section.insta__img img {
     width: 300px;
     margin: 0 auto;
     display: block;
     padding: 0 auto;
   }
 
-  section.insta-img2 img {
-    width: 500px;
-    margin: 0 auto;
-    display: block;
-    padding: 0 auto;
-  }
-
-  section.insta-img3 img {
+  section.insta__img2 img {
     width: 350px;
     margin: 0 auto;
     display: block;
     padding: 0 auto;
   }
 
-  section.insta-img4 img {
-    width: 500px;
+  section.insta__img3 img {
+    width: 300px;
     margin: 0 auto;
     display: block;
     padding: 0 auto;
   }
 
-  section.insta-img5 img {
-    width: 500px;
+  section.insta__img4 img {
+    width: 350px;
     margin: 0 auto;
     display: block;
     padding: 0 auto;
   }
 
-  section.insta-img6 img {
-    width: 500px;
+  section.insta__img5 img {
+    width: 350px;
     margin: 0 auto;
     display: block;
     padding: 0 auto;
   }
 
-  section.insta-img7 img {
-    width: 500px;
+  section.insta__img6 img {
+    width: 350px;
     margin: 0 auto;
     display: block;
     padding: 0 auto;
   }
 
-  .box-insta2 {
-    border: 2px solid #f19089;
-    width: 546.9px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 35px;
-    margin-bottom: 35px; 
+  section.insta__img7 img {
+    width: 350px;
+    margin: 0 auto;
+    display: block;
+    padding: 0 auto;
+  }
+
+  .box__insta2 {
+    border: 2px solid #1144c1;
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    padding-left: 1rem;
+    padding-right: 2rem;
+    align-items: center;
   }
 
   .overview2 {
-    font-size: 150%;
+    font-size: 5rem;
     margin-top: 1rem;
     margin-bottom: 0.5rem;
-    color: #ffb2ad;
+    color: rgba(232,54,0,1);
 }
 
   .vid1 {
@@ -493,8 +581,14 @@ video {
   justify-content: center;
  }
 
+ .number {
+   display: none;
+ }
 
-}
+ .hr {
+   display: none;
+ }
+
 
 /*
 
@@ -536,21 +630,88 @@ Attempt at trying to make the vid and paragraphs align vertically in mobile view
 
 @media screen and (min-width: 700px) {
 
+  .title {
+    background: rgb(2,0,36);
+background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(163,43,7,1) 68%, rgba(0,0,0,1) 100%);
+    font-size: 4rem;
+    font-family: bely-display,sans-serif;
+font-weight: 400;
+font-style: normal;
+  }
 
-  section.insta-img img {
+  .box__heading {
+    color: rgb(197, 132, 235);
+    padding-top: 1rem;
+    font-size: 2rem;
+    font-family: bely-display,sans-serif;
+font-weight: 400;
+font-style: normal;
+padding-bottom: 0.25rem;
+
+  }
+
+  .box1 {
+    font-size: 1.2rem;
+    font-family: muli,sans-serif;
+font-weight: 400;
+font-style: normal;
+
+  }
+
+  .box__insta2 {
+    border: 0.35rem solid #1144c1;
+    display: flex;
+    flex-direction: column;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    align-items: center;
+  }
+
+  .h3__insta {
+    text-align: center;
+    font-size: 2.25rem;
+    color: rgba(232,54,0,1);
+    padding-left: 10%;
+    padding-right: 10%;
+    font-family: bely-display,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-bottom: 0.25rem;
+  }
+
+  .overview {
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(232,54,0,1) 27%, rgba(17,68,193,1) 56%, rgba(232,54,0,1) 79%, rgba(0,0,0,1) 100%);
+      font-size: 2.5rem;
+      margin-top: 0.5rem;
+      color: white;
+    }
+
+    .conclusion2 {
+      background: rgb(2,0,36);
+      background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(232,54,0,1) 27%, rgba(17,68,193,1) 56%, rgba(232,54,0,1) 79%, rgba(0,0,0,1) 100%);
+        font-size: 2.5rem;
+        color: white;
+        margin-bottom: 40px;
+      }
+
+
+  section.insta__img img {
     width: 450px;
     margin: 0 auto;
     display: block; 
   }
 
-  section.insta-img2 img {
+  section.insta__img2 img {
     width: 700px;
     margin: 0 auto;
     display: block;
     padding: 0 auto;
   }
 
-  section.insta-img3 img {
+  section.insta__img3 img {
     width: 550px;
     margin: 0 auto;
     display: block;
@@ -558,28 +719,28 @@ Attempt at trying to make the vid and paragraphs align vertically in mobile view
 
   }
 
-    section.insta-img4 img {
+    section.insta__img4 img {
       width: 700px;
       margin: 0 auto;
       display: block;
       padding: 0 auto;
   }
 
-  section.insta-img5 img {
+  section.insta__img5 img {
     width: 700px;
     margin: 0 auto;
     display: block;
     padding: 0 auto;
   }
 
-  section.insta-img6 img {
-    width: 900px;
+  section.insta__img6 img {
+    width: 700px;
     margin: 0 auto;
     display: block;
     padding: 0 auto;
   }
 
-  section.insta-img7 img {
+  section.insta__img7 img {
     width: 700px;
     margin: 0 auto;
     display: block;
@@ -587,7 +748,7 @@ Attempt at trying to make the vid and paragraphs align vertically in mobile view
   }
 
   .box-insta2 {
-    border: 2px solid #f19089;
+    border: 3rem solid #1144c1;
     width: 546.9px;
     margin-left: 20px;
     margin-right: 20px;
@@ -597,30 +758,51 @@ Attempt at trying to make the vid and paragraphs align vertically in mobile view
 
   .overview2 {
   font-size: 150%;
-  float: left;
   line-height: 100px;
   padding-right: 700px;
   padding-left: 50px;
   margin-top: 1rem;
   margin-bottom: 0.5rem;
-  color: #ffb2ad;
+  color: rgba(232,54,0,1);
 }
 
 .vid1 {
-  float: left;
   padding-left: 400px;
   display: flex;
   justify-content: center;
 }
 
-.article-card {
+.article__card {
   /* width: 100%; */
   display: flex;
   justify-content: center;
   align-items: flex-start;
   padding: 2rem;
-  background-color: rgb(32, 32, 32);
+  background-color: white;
 }
+
+.number {
+  margin-top: 1rem;
+  color: #1144c1;
+  padding-top: 40px;
+  padding-right: 100%;
+  font-size: 550%;
+  justify-content: flex-start;
+  display: flex;
+  flex-direction: row;
+  float: left;
+  font-family: bely-display,sans-serif;
+    font-weight: 400;
+  font-style: normal;
+}
+
+.hr {
+  color: rgb(197, 132, 235);
+  display: block;
+  width: 100%;
+  }
+
+
 }
 
 /*
@@ -643,30 +825,59 @@ Attempt at trying to make the vid and paragraphs align vertically in mobile view
 
 */
 
-}
-
 
 
 @media screen and (min-width: 1200px) {
 
+  .title {
+    background: rgb(2,0,36);
+background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(163,43,7,1) 68%, rgba(0,0,0,1) 100%);
+    text-align: center;
+    padding-top: 2rem;
+    margin-bottom: 3rem;
+    font-size: 4rem;
+    font-family: bely-display,sans-serif;
+    font-weight: 400;
+  font-style: normal;
+  }
+
+  .box__heading {
+    color: rgb(197, 132, 235);
+    font-size: 3rem;
+    font-family: bely-display,sans-serif;
+font-weight: 400;
+font-style: normal;
+padding-bottom: 0.25rem;
+
+  }
+
+  .box1 {
+    font-size: 1.6rem;
+    font-family: muli,sans-serif;
+font-weight: 400;
+font-style: normal;
+
+  }
+
   section.insta-img img {
     width: 700px;
     margin: 0 auto;
-    display: block; 
+    display: block;
+    padding: 5%; 
   }
 
   section.insta-img2 img {
     width: 900px;
     margin: 0 auto;
     display: block;
-    padding: 0 auto;
+    padding: 5%; 
   }
 
   section.insta-img3 img {
     width: 900px;
     margin: 0 auto;
     display: block;
-    padding: 0 auto;
+    padding: 5%;
 
   }
 
@@ -674,43 +885,42 @@ Attempt at trying to make the vid and paragraphs align vertically in mobile view
       width: 900px;
       margin: 0 auto;
       display: block;
-      padding: 0 auto;
+      padding: 5%;
   }
 
   section.insta-img5 img {
     width: 900px;
     margin: 0 auto;
     display: block;
-    padding: 0 auto;
+    padding: 5%;
   }
 
   section.insta-img6 img {
     width: 900px;
     margin: 0 auto;
     display: block;
-    padding: 0 auto;
+    padding: 5%;
   }
 
   section.insta-img7 img {
     width: 900px;
     margin: 0 auto;
     display: block;
-    padding: 0 auto;
+    padding: 5%;
   }
 
   .overview2 {
     font-size: 150%;
     float: left;
     line-height: 100px;
-    padding-right: 1,000px;
     padding-left: 50px;
     margin-top: 1rem;
     margin-bottom: 0.5rem;
-    color: #ffb2ad;
+    color: rgb(197, 132, 235);
   }
 
   .box-insta2 {
-    border: 2px solid #f19089;
+    border: 2px solid azure;
     width: 630px;
     margin-left: 20px;
     margin-right: 20px;
@@ -725,6 +935,25 @@ Attempt at trying to make the vid and paragraphs align vertically in mobile view
   
   }
 
+  .number {
+    margin-top: 1rem;
+    color: #1144c1;
+    padding-top: 40px;
+    font-size: 550%;
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: row;
+    font-family: bely-display,sans-serif;
+    font-weight: 400;
+  font-style: normal;
+  }
+
+  .hr {
+    color:rgb(197, 132, 235);
+    display: block;
+    width: 100%;
+    }
+    
   /*
 
 Attempt at trying to make the vid and paragraphs align vertically in mobile view
@@ -745,433 +974,21 @@ Attempt at trying to make the vid and paragraphs align vertically in mobile view
 }
 
 
+  /* Mikes styles */
 
-
-
-
-
-
-
-
-/*
-
-body {
-    margin: 0;
-    padding: 0;
-    background: rgb(31, 31, 31);
-    color: #cdcdcd;
-    overflow-x: hidden;
-  }
-  
-
-
-  /* nav bar */
-
-  /*
-
-  #menuToggle {
-    display: block;
-    position: relative;
-    top: 35px;
-    left: 22px;
-    z-index: 1;
-    -webkit-user-select: none;
-    user-select: none;
-  }
-  
-  #menuToggle a {
-    text-decoration: none;
-    color: #232323;
-  
-    transition: color 0.3s ease;
-  }
-  
-  #menuToggle a:hover {
-    color: #fff;
-  }
-  
-  #menuToggle input {
-    display: block;
-    width: 40px;
-    height: 32px;
-    position: absolute;
-    top: -7px;
-    left: -5px;
-  
-    cursor: pointer;
-  
-    opacity: 0; /* hide this */
-    z-index: 2; /* and place it over the hamburger */
-
-    /*
-  
-    -webkit-touch-callout: none;
-  }
-
-  
-  
-  /*
-   * Just a quick hamburger
-   */
-
-   /*
-  #menuToggle span {
-    display: block;
-    width: 33px;
-    height: 4px;
-    margin-bottom: 5px;
-    position: relative;
-  
-    background: #f19089;
-    border-radius: 3px;
-  
-    z-index: 1;
-  
-    transform-origin: 4px 0px;
-  
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-    background: 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
-  }
-  
-  #menuToggle span:first-child {
-    transform-origin: 0% 0%;
-  }
-  
-  #menuToggle span:nth-last-child(2) {
-    transform-origin: 0% 100%;
-  }
-  
-  /* 
-   * Transform all the slices of hamburger
-   * into a crossmark.
-   */
-
-   /*
-  #menuToggle input:checked ~ span {
-    opacity: 1;
-    transform: rotate(45deg) translate(-2px, -1px);
-    background: #232323;
-  }
-  
-  /*
-   * But let's hide the middle one.
-   */
-
-   /*
-  #menuToggle input:checked ~ span:nth-last-child(3) {
-    opacity: 0;
-    transform: rotate(0deg) scale(0.2, 0.2);
-  }
-  
-  /*
-   * Ohyeah and the last one should go the other direction
-   */
-
-   /*
-  #menuToggle input:checked ~ span:nth-last-child(2) {
-    transform: rotate(-45deg) translate(0, -1px);
-  }
-  
-  /*
-   * Make this absolute positioned
-   * at the top left of the screen
-   */
-
-   /*
-  #menu {
-    position: absolute;
+  .case-study__main-image {
     width: 100%;
-    padding: 50px;
-    padding-top: 125px;
-    top: -100px;
-    left: -35px;
-  
-    background: #f19089;
-    list-style-type: none;
-    -webkit-font-smoothing: antialiased;
-    /* to stop flickering of text in safari */
-  
-    /*
-    transform-origin: 0% 0%;
-    transform: translate(-100%, 0);
-  
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
   }
-  
-  #menu li {
-    padding: 12px 0;
-    font-size: 137.5%;
-  }
-  
-  /*
-   * And let's slide it in from the left
-   */
 
-   /*
-  #menuToggle input:checked ~ ul {
-    transform: none;
+  .case-study__top-container {
+    display: flex;
+    flex-direction: column;
   }
-  
-  /*
-  General
-  */
 
-  /*
 
   @media screen and (min-width: 700px) {
-
-    .box-insta {
-      float: left;
-      border: 2px solid #f19089;
-      width: 90%;
-      margin-left: 20px;
-      margin-top: 35px;
-      margin-bottom: 35px; 
+    .case-study__top-container {
+      flex-direction: row;
+      justify-content: space-between;
     }
-
-    .box-insta2 {
-      float: right;
-      border: 2px solid #f19089;
-      width: 90%;
-      margin-left: 10px;
-      margin-right: 10px;
-      margin-top: 35px;
-      margin-bottom: 35px; 
-    }
-    
-}
-  
-  .box-insta {
-    border: 2px solid #f19089;
-    width: 36.62%;
-    margin-left: 20px;
-    margin-top: 35px;
-    margin-bottom: 35px;
   }
-
-  .box-insta2 {
-    border: 2px solid #f19089;
-    width: 36.62%;
-    margin-left: 20px;
-    margin-top: 35px;
-    margin-bottom: 35px;
-  }
-
-  hr {
-    width: 100%;
-    height: 1px;
-    width: 36.62%;
-    margin-right: 100px;
-    margin-left: -34px;
-    background-color: #f19089;
-  }
-
-
-  p {
-    font-size: 100%;
-    margin-top: 1.5rem;
-    margin-bottom: 1rem;
-  }
-
-  .p-lone {
-    margin-top: 1rem;
-  }
-  
-  html {
-    width: 100vw;
-  }
-  
-  body {
-    margin: 0;
-    font-family: "JetBrains Mono", monospace;
-    background-color: rgb(31, 31, 31);
-    color: rgb(255, 255, 255);
-  }
-
-  .article-card {
-    /* width: 100%; */
-
-    /*
-    display: flex;
-    flex-direction: column;
-    padding: 2rem;
-    background-color: rgb(32, 32, 32);
-    justify-content: center;
-  }
-
-  .article-card2 {
-    /* width: 100%; */
-
-    /*
-    display: flex;
-    flex-direction: column;
-    padding-right: 2rem;
-    padding-left: 2rem;
-    padding-bottom: 2rem;
-    background-color: rgb(32, 32, 32);
-    justify-content: center;
-  }
-
-  video {
-      padding: 2rem;
-
-  }
-  
-  img {
-    max-width: 100%;
-    width: 100%;
-  }
-  
-  .me {
-    padding: 0 2rem;
-  }
-
-  .container {
-    display: flex;
-    justify-content: space-between;
-    margin-left: 2rem;
-    margin-bottom: 1.5rem;
-    width: 0.68%;
-  }
-
-  .container2 {
-    width: 3.91%;
-    height: 40px;
-    position: absolute;
-    top: 29px;
-    right: 18px;
-    z-index: 50;
-  }
-  
-  .Contact {
-    font-size: 150%;
-    padding-top: 3.5rem;
-    padding-bottom: 1rem;
-    padding-left: 2rem;
-    color: rgb(98, 137, 232);
-  }
-
-  .contact-res {
-    font-size: 150%;
-    padding-bottom: 1rem;
-    padding-left: 2rem;
-    color: rgb(98, 137, 232);
-  }
-  
-  .mail {
-    padding-left: 2rem;
-    padding-bottom: 1.5rem;
-  }
-
-  .p-vid {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-  }
-
-  .conclusion {
-    font-size: 150%;
-    margin-bottom: 0.5rem;
-    margin-top: 3rem;
-    color: #ffb2ad;
-  }
-
-  
-
-  .header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-  }
-
-  .overview {
-    font-size: 150%;
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
-    color: #ffb2ad;
-  }
-  
-  .logo {
-    width: 50px;
-    height: 50px;
-    margin-left: 1rem;
-    margin-top: 1.5rem;
-    background-color: #ffb2ad;
-  }
-  
-  .word-spacing {
-    font-size: 125%;
-    display: flex;
-    flex-direction: row;
-    flex: 1;
-    justify-content: space-around;
-    min-width: 20.51%;
-    max-width: 26.37%;
-  }
-
-  .Title {
-    font-size: 250%;
-    padding-left: 1rem;
-    margin-top: 4rem;
-  }
-
-  .title2 {
-    font-size: 150%;
-    padding-left: 1rem;
-    margin-top: 4rem;
-    margin-bottom: 0.5rem;
-    color: #ffb2ad;
-  }
-
-  
-  .insta-title {
-    padding-top: 3rem;
-    padding-right: 1rem;
-    padding-left: 1rem;
-  }
-  
-  .insta-title2 {
-    padding-bottom: 3rem;
-    padding-right: 1rem;
-    padding-left: 1rem;
-  }
-  
-  .cs-img {
-    padding-top: 3.5rem;
-    padding-right: 1rem;
-    padding-left: 1rem;
-  }
-  
-  .insta-img {
-    padding-right: 1rem;
-    padding-left: 1rem;
-  }
-
-  .p-insta {
-    margin-bottom: 0.75rem;
-    margin-top: 0.75rem;
-  }
-
-  .p-insta2 {
-    margin-bottom: 1rem;
-    margin-top: 0.75rem;
-  }
-  
-  .p-instadif {
-    margin-bottom: 1.5rem;
-    margin-top: 1rem;
-  }
-
-  .h2-insta {
-    font-size: 150%;
-    margin-bottom: 0.5rem;
-    color: #ffb2ad;
-  }
-
-  .h3-insta {
-    font-size: 125%;
-    margin-top: 1rem;
-    color: rgb(98, 137, 232);
-  }
-
-  /*
