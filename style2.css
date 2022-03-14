@@ -670,6 +670,17 @@ font-style: normal;
     align-items: center;
   }
 
+  .p__insta2 {
+    font-size: 1.25rem;
+    text-align: justify;
+    font-family: muli,sans-serif;
+    font-weight: 400;
+    font-style: normal;    
+    padding-left: 2.5rem;
+    padding-right: 2rem;
+
+  }
+
   .h3__insta {
     font-size: 2.25rem;
     color: rgb(197, 132, 235);
@@ -683,7 +694,7 @@ font-style: normal;
   .overview {
     background: rgb(2,0,36);
 background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(232,54,0,1) 27%, rgba(17,68,193,1) 56%, rgba(232,54,0,1) 79%, rgba(0,0,0,1) 100%);
-      font-size: 2.5rem;
+      font-size: 4rem;
       margin-top: 0.5rem;
       color: white;
     }
@@ -839,6 +850,17 @@ background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(163,43,7,1) 68%, rgb
   font-style: normal;
   }
 
+  .p__insta2 {
+    font-size: 1.5rem;
+    text-align: justify;
+    font-family: muli,sans-serif;
+    font-weight: 400;
+    font-style: normal;    
+    padding-left: 2.5rem;
+    padding-right: 2rem;
+
+  }
+
   .box__heading {
     color: #1144c1;
     font-size: 3rem;
@@ -907,6 +929,14 @@ font-style: normal;
     padding: 5%;
   }
 
+  .overview {
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(232,54,0,1) 27%, rgba(17,68,193,1) 56%, rgba(232,54,0,1) 79%, rgba(0,0,0,1) 100%);
+      font-size: 3.5rem;
+      margin-top: 0.5rem;
+      color: white;
+    }
+
   .overview2 {
     font-size: 150%;
     float: left;
@@ -950,6 +980,20 @@ font-style: normal;
     color:rgb(197, 132, 235);
     display: block;
     width: 100%;
+    }
+
+    .conclusion2 {
+      text-align: center;
+      background: rgb(2,0,36);
+      background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(232,54,0,1) 27%, rgba(17,68,193,1) 56%, rgba(232,54,0,1) 79%, rgba(0,0,0,1) 100%);
+      font-size: 3.5rem;
+      margin-bottom: 40px;
+      color: white;
+      font-family: bely-display,sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      height: auto;
+      width: 100%;
     }
     
   /*
