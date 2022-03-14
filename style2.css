@@ -1,3 +1,15 @@
+/* General */
+
+:root{
+  --background-color: #151515;
+  --text-color: white;
+  --button-radius: 25px;
+  --font-1: "bely-display";
+  --font-2: "muli";
+  --heading3-padding: 1rem;
+
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -15,6 +27,57 @@ font-style: normal;
 
 .image {
   padding-left: 40%;
+}
+
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  margin-left: 1rem;
+  margin-top: 1.5rem;
+  background-color: #ffb2ad;
+}
+
+.title {
+  font-size: 5rem;
+  padding-left: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 3%;
+  margin-top: 4rem;
+  color: azure;
+}
+
+html {
+  width: 100vw;
+}
+
+body {
+  margin: 0;
+  font-family: tenez,sans-serif;
+  background-color: #151515;
+  color:  white;
+}
+
+.article__card2 {
+  /* width: 100%; */
+  flex-direction: row;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  padding-bottom: 2rem;
+  background-color: #151515;
+  justify-content: space-between;
+}
+
+video {
+    padding: 1rem;
+
 }
 
 
@@ -146,124 +209,7 @@ font-style: normal;
   transform: none;
 }
 
-/*
-General
-*/
-
-
-/*
-  .box-insta {
-  border: 2px solid #f19089;
-  width: 36.62%;
-  margin-left: 20px;
-  margin-top: 35px;
-  margin-bottom: 35px;
-}
-
-.box-insta2 {
-  border: 2px solid #f19089;
-  width: 36.62%;
-  margin-left: 20px;
-  margin-top: 35px;
-  margin-bottom: 35px;
-}
-
-hr {
-  width: 100%;
-  height: 1px;
-  width: 36.62%;
-  margin-right: 100px;
-  margin-left: -34px;
-  background-color: #f19089;
-}
-
-*/
-
-
-p {
-  font-size: 100%;
-  margin-top: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-
-.p__lone {
-  margin-bottom: 1.5rem;
-  margin-top: 1rem;
-  width: 50%;
-}
-
-html {
-  width: 100vw;
-}
-
-body {
-  margin: 0;
-  font-family: tenez,sans-serif;
-  background-color: #151515;
-  color:  white;
-}
-
-.top {
-  flex-direction: column;
-}
-
-.headtitle {
-  flex-direction: column;
-}
-
-.headdescrip {
-  flex-direction: column;
-  padding-left: 50px;
-  padding-right: 75px;
-
-}
-
-.paradetails {
-  flex-direction: column;
-  padding-left: 100%;
-
-}
-
-.article__card {
-  /* width: 100%; */
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 2rem;
-  background-color: #151515;
-}
-
-.article__card2 {
-  /* width: 100%; */
-  flex-direction: row;
-  padding-right: 2rem;
-  padding-left: 2rem;
-  padding-bottom: 2rem;
-  background-color: #151515;
-  justify-content: space-between;
-}
-
-video {
-    padding: 1rem;
-
-}
-
-.vid1 {
-   display: flex;
-   justify-content: center;
-}
-
-.vid2 {
-  display: flex;
-  justify-content: center;
-}
-
-
-
-.me {
-  padding: 0 2rem;
-}
+/* contact */
 
 .container {
   display: flex;
@@ -272,18 +218,6 @@ video {
   margin-bottom: 1.5rem;
   width: 0.68%;
 }
-
-/*
-.container2 {
-  width: 3.91%;
-  height: 40px;
-  position: absolute;
-  top: 29px;
-  right: 18px;
-  z-index: 50;
-}
-
-*/
 
 .Contact {
   font-size: 150%;
@@ -306,120 +240,10 @@ video {
   padding-bottom: 1.5rem;
 }
 
-.p__vid {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-}
-
-.conclusion {
-  font-size: 3rem;
-  margin-bottom: 0.5rem;
-  margin-top: 3rem;
-  color: #ffb2ad;
-}
-
-
-
-.header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-}
-
-
-.overview2 {
-  font-size: 3rem;
-  line-height: 100px;
-  padding-right: 950px;
-  padding-left: 50px;
-  margin-top: 1rem;
-  margin-bottom: 0.5rem;
-  color: rgb(197, 132, 235);
-}
-
-
-
-.logo {
-  width: 50px;
-  height: 50px;
-  margin-left: 1rem;
-  margin-top: 1.5rem;
-  background-color: #ffb2ad;
-}
-
-.word__spacing {
-  font-size: 2rem;
-  display: flex;
-  flex-direction: row;
-  flex: 1;
-  justify-content: space-around;
-  min-width: 20.51%;
-  max-width: 26.37%;
-}
-
-.title {
-  font-size: 5rem;
-  padding-left: 2rem;
-  padding-top: 1rem;
-  padding-bottom: 3%;
-  margin-top: 4rem;
-  color: azure;
-}
-
-.title2 {
-  font-size: 3rem;
-  padding-left: 1rem;
-  margin-top: 4rem;
-  margin-bottom: 0.5rem;
-  color: azure;
-}
-
-
-.insta__title {
-  padding-top: 3rem;
-  padding-right: 1rem;
-  padding-left: 1rem;
-}
-
-.insta__title2 {
-  padding-bottom: 3rem;
-  padding-right: 1rem;
-  padding-left: 1rem;
-}
-
-.cs__img {
-  padding-top: 3.5rem;
-  padding-right: 1rem;
-  padding-left: 1rem;
-}
-
-.p__insta {
-  margin-bottom: 0.75rem;
-  margin-top: 0.75rem;
-}
-
-.p__insta2 {
-  margin-bottom: 1rem;
-  margin-top: 0.75rem;
-  padding-left: 10%;
-  padding-right: 10%;
-}
-
-.p__instadif {
-  margin-bottom: 1.5rem;
-  margin-top: 1rem;
-  width: 75%;
-}
-
-.h2__insta {
-  font-size: 150%;
-  margin-bottom: 0.5rem;
-  color: #a32b07;
-}
-
 
 @media screen and (min-width: 0px) {
+
+  /* Insta */
 
   .number {
     margin-top: 1rem;
@@ -590,40 +414,6 @@ padding-left: 1rem;
   display: block;
   width: 100%;
   }
-
-
-/*
-
-Attempt at trying to make the vid and paragraphs align vertically in mobile view
-
-.vid3 {
-  padding-left: 150px;
-  display: flex;
-  justify-content: center;
-}
-
-.article-card3 {
-  display: flex;
-  flex-direction: column;
-  padding-right: 2rem;
-  padding-left: 2rem;
-  padding-bottom: 2rem;
-  background-color: rgb(32, 32, 32);
-  justify-content: center;
-}
-
-.overview3 {
-  font-size: 150%;
-  float: left;
-  line-height: 100px;
-  padding-right: 950px;
-  padding-left: 50px;
-  margin-top: 1rem;
-  margin-bottom: 0.5rem;
-  color: #ffb2ad;
-}
-
- */
   
 }
 
@@ -631,6 +421,8 @@ Attempt at trying to make the vid and paragraphs align vertically in mobile view
 
 
 @media screen and (min-width: 700px) {
+
+  /* Insta */
 
   .title {
     background: rgb(2,0,36);
@@ -676,7 +468,7 @@ font-style: normal;
     font-family: muli,sans-serif;
     font-weight: 400;
     font-style: normal;    
-    padding-left: 2.5rem;
+    padding-left: 1rem;
     padding-right: 2rem;
 
   }
@@ -814,29 +606,11 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(232,54,0,1) 27%, rgba
 
 }
 
-/*
-
-Attempt at trying to make the vid and paragraphs align vertically in mobile view
-
-.vid3 {
- display: none;
-}
-
-.article-card3 {
-  display: none;
-}
- 
-
-.overview3 {
-  display: none;
-
-}
-
-*/
-
 
 
 @media screen and (min-width: 1200px) {
+
+  /* Insta */
 
   .title {
     background: rgb(2,0,36);
@@ -856,7 +630,7 @@ background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(163,43,7,1) 68%, rgb
     font-family: muli,sans-serif;
     font-weight: 400;
     font-style: normal;    
-    padding-left: 2.5rem;
+    padding-left: 1rem;
     padding-right: 2rem;
 
   }
@@ -879,33 +653,37 @@ font-style: normal;
 
   }
 
-  section.insta-img img {
+  section.insta__img img {
+    width: 500px;
+    margin: 0 auto;
+    display: block;
+    padding-top: 2.8rem; 
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  section.insta__img2 img {
     width: 700px;
     margin: 0 auto;
     display: block;
-    padding: 5%; 
+    padding: 1rem; 
   }
 
-  section.insta-img2 img {
-    width: 900px;
+  section.insta__img3 img {
+    width: 600px;
     margin: 0 auto;
     display: block;
-    padding: 5%; 
-  }
-
-  section.insta-img3 img {
-    width: 900px;
-    margin: 0 auto;
-    display: block;
-    padding: 5%;
+    padding-top: 13rem;
+    padding-right: 3rem;
 
   }
 
-    section.insta-img4 img {
-      width: 900px;
+    section.insta__img4 img {
+      width: 700px;
       margin: 0 auto;
       display: block;
-      padding: 5%;
+      padding-top: 13rem;
+      padding-left: 3rem;
   }
 
   section.insta-img5 img {
@@ -922,11 +700,12 @@ font-style: normal;
     padding: 5%;
   }
 
-  section.insta-img7 img {
-    width: 900px;
+  section.insta__img7 img {
+    width: 600px;
     margin: 0 auto;
     display: block;
-    padding: 5%;
+    padding-right: 1rem;
+    padding-top: 1rem;
   }
 
   .overview {
@@ -995,24 +774,21 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(232,54,0,1) 27%, rgba
       height: auto;
       width: 100%;
     }
-    
-  /*
 
-Attempt at trying to make the vid and paragraphs align vertically in mobile view
+    .case-study {
+      flex-direction: row;
+      justify-content: space-between;
+    }
 
-  .vid3 {
-    display: none;
-   }
-   
-   .article-card3 {
-     display: none;
-   }
-    
-   
-   .overview3 {
-     display: none;
+    .case-study__top-container {
+      display: flex;
+      flex-direction: column;
+    }
 
-     */
+    .vid2 {
+      margin-left: 5rem;
+    }
+
 }
 
 
@@ -1022,10 +798,7 @@ Attempt at trying to make the vid and paragraphs align vertically in mobile view
     width: 100%;
   }
 
-  .case-study__top-container {
-    display: flex;
-    flex-direction: column;
-  }
+ 
 
 
   @media screen and (min-width: 700px) {
