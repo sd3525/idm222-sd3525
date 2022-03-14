@@ -225,16 +225,6 @@ body {
 
 }
 
-.number {
-  margin-top: 1rem;
-  color: #a32b07;
-  padding-top: 40px;
-  font-size: 550%;
-  justify-content: flex-start;
-  display: flex;
-  flex-direction: row;
-}
-
 .article__card {
   /* width: 100%; */
   display: flex;
@@ -255,7 +245,7 @@ body {
 }
 
 video {
-    padding: 2rem;
+    padding: 1rem;
 
 }
 
@@ -431,6 +421,21 @@ video {
 
 @media screen and (min-width: 0px) {
 
+  .number {
+    margin-top: 1rem;
+    color: #1144c1;
+    padding-top: 40px;
+    padding-right: 100%;
+    font-size: 3rem;
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: row;
+    float: left;
+    font-family: bely-display,sans-serif;
+      font-weight: 400;
+    font-style: normal;
+  }
+
   .title {
     background: rgb(2,0,36);
 background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(17,68,193,1) 28%, rgba(163,43,7,1) 68%, rgba(0,0,0,1) 100%);
@@ -444,7 +449,7 @@ background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(17,68,193,1) 28%, rg
   }
 
   .box__heading {
-    color: rgb(197, 132, 235);
+    color: #1144c1;
     font-size: 2rem;
     font-family: bely-display,sans-serif;
 font-weight: 400;
@@ -463,9 +468,9 @@ padding-left: 1rem;
   }
 
   .h3__insta {
-    text-align: center;
+    justify-content: flex-start;
     font-size: 2.25rem;
-    color: rgba(232,54,0,1);
+    color: rgb(197, 132, 235);
     padding-left: 1rem;
      font-family: bely-display,sans-serif;
     font-weight: 400;
@@ -560,7 +565,6 @@ padding-left: 1rem;
   }
 
   .box__insta2 {
-    border: 2px solid #1144c1;
     display: flex;
     flex-direction: column;
     margin-left: 2rem;
@@ -581,13 +585,11 @@ padding-left: 1rem;
   justify-content: center;
  }
 
- .number {
-   display: none;
- }
-
- .hr {
-   display: none;
- }
+.hr {
+  color: rgb(197, 132, 235);
+  display: block;
+  width: 100%;
+  }
 
 
 /*
@@ -640,7 +642,7 @@ font-style: normal;
   }
 
   .box__heading {
-    color: rgb(197, 132, 235);
+    color: #1144c1;
     padding-top: 1rem;
     font-size: 2rem;
     font-family: bely-display,sans-serif;
@@ -659,7 +661,6 @@ font-style: normal;
   }
 
   .box__insta2 {
-    border: 0.35rem solid #1144c1;
     display: flex;
     flex-direction: column;
     margin-right: 1rem;
@@ -670,11 +671,9 @@ font-style: normal;
   }
 
   .h3__insta {
-    text-align: center;
     font-size: 2.25rem;
-    color: rgba(232,54,0,1);
-    padding-left: 10%;
-    padding-right: 10%;
+    color: rgb(197, 132, 235);
+    padding-left: 1rem;
     font-family: bely-display,sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -748,7 +747,6 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(232,54,0,1) 27%, rgba
   }
 
   .box-insta2 {
-    border: 3rem solid #1144c1;
     width: 546.9px;
     margin-left: 20px;
     margin-right: 20px;
@@ -786,7 +784,7 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(232,54,0,1) 27%, rgba
   color: #1144c1;
   padding-top: 40px;
   padding-right: 100%;
-  font-size: 550%;
+  font-size: 4rem;
   justify-content: flex-start;
   display: flex;
   flex-direction: row;
@@ -842,7 +840,7 @@ background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(163,43,7,1) 68%, rgb
   }
 
   .box__heading {
-    color: rgb(197, 132, 235);
+    color: #1144c1;
     font-size: 3rem;
     font-family: bely-display,sans-serif;
 font-weight: 400;
