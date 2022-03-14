@@ -3,9 +3,8 @@
 :root{
   --background-color: #151515;
   --text-color: white;
-  --button-radius: 25px;
   --font-1: "bely-display";
-  --font-2: "muli";
+  --font-2: "raleway";
   --heading3-padding: 1rem;
 
 }
@@ -26,7 +25,7 @@ font-style: normal;
 }
 
 .image {
-  padding-left: 40%;
+  padding-left: 2rem;
 }
 
 
@@ -243,6 +242,146 @@ video {
 
 @media screen and (min-width: 0px) {
 
+  /* Index */
+
+  section.me img {
+    width: 300px;
+    margin: 0 auto;
+    display: block;
+    padding: 0 auto;
+  }
+
+  .description {
+    text-align: start;
+    font-family: var(--font-2);
+    font-size: 1.2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 1.5rem;
+    line-height: 1.8rem;
+  }
+
+  .cs__index {
+    text-align: center;
+    font-family: var(--font-1);
+    color: black;
+    font-size: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .cs__imgs {
+    margin-top: 6rem;
+    margin-left: 1.7rem;
+    margin-right: 1.7rem;
+    background-image: radial-gradient(circle, #c584eb, #ae76e3, #9569db, #7a5dd4, #5a52cc, #404fbc, #254bab, #004699, #004075, #003249, #002024, #080c0b);
+  }
+
+  .cs__imgs2 {
+    margin-top: 6rem;
+    margin-left: 1.7rem;
+    margin-right: 1.7rem;
+    background-image: radial-gradient(circle, #1144c1, #4e4ec9, #7059d1, #8c65d8, #a672e0, #a06ccf, #9967bf, #9162af, #6c4a84, #4a325b, #2b1d35, #0d0113);
+  }
+
+  .cs__imgs3 {
+    margin-top: 6rem;
+    margin-left: 1.7rem;
+    margin-right: 1.7rem;
+    background-image: radial-gradient(circle, #c584eb, #e46fcf, #f95bab, #ff4e82, #ff4d57, #ed444e, #db3a45, #c9313d, #982147, #621d42, #31162d, #07010b);
+  }
+
+
+  .button {
+    font-family: var(--font-1);
+    font-size: 1.7rem;
+    border: 0.2rem solid black; 
+    background-image: radial-gradient(circle, #c584eb, #e46fcf, #f95bab, #ff4e82, #ff4d57, #ed444e, #db3a45, #c9313d, #982147, #621d42, #31162d, #07010b);
+    color: white;
+    margin-left: 7rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 1.5rem;
+    box-shadow: 3px 3px 3px #888888;
+
+  }
+
+  .index__number {
+    margin-top: 0.5rem;
+    color: rgb(197, 132, 235);
+    padding-left: 1.5rem;
+    font-size: 4.5rem;
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: row;
+    float: left;
+    font-family: var(--font-1);
+  }
+
+  .desc__index {
+    font-family: var(--font-2);
+    font-size: 1.2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    line-height: 1.5rem;
+  }
+
+  .cs__title {
+    color: rgb(197, 132, 235);
+    font-family: var(--font-1);
+    font-size: 2.5rem;
+    padding-left: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .cs__card2 {
+    background-color:rgb(240, 235, 235);
+    background-image: linear-gradient(rgb(160, 158, 158) .1rem, transparent .1rem), linear-gradient(90deg, rgb(160, 158, 158) .1rem, transparent .1rem);
+    background-size: 2rem 2rem;
+  }
+
+
+  .cs__card__text {
+    margin-left: 1.6rem;
+    margin-right: 1.6rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    background: rgb(0, 0, 0);
+    padding-bottom: 1rem;
+  }
+
+  .cs__card {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-bottom: 0.8rem;
+    background-image: linear-gradient(rgb(160, 158, 158) .1rem, transparent .1rem), linear-gradient(90deg, rgb(160, 158, 158) .1rem, transparent .1rem);
+    background-size: 2rem 2rem;
+  }
+
+  .cs__card3 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    background-image: linear-gradient(rgb(160, 158, 158) .1rem, transparent .1rem), linear-gradient(90deg, rgb(160, 158, 158) .1rem, transparent .1rem);
+    background-size: 2rem 2rem;
+  }
+
+  .cs__card3 {
+    margin-top: 2rem;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(163,43,7,1) 25%, rgba(163,43,7,1) 75%, rgba(0,0,0,1) 100%);
+  }
+  
+
+  .index__insta {
+    width: 325px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 2rem;
+    padding: 0 auto;
+  }
+
   /* Insta */
 
   .number {
@@ -255,39 +394,43 @@ video {
     display: flex;
     flex-direction: row;
     float: left;
-    font-family: bely-display,sans-serif;
-      font-weight: 400;
-    font-style: normal;
+    font-family: var(--font-1);
   }
 
   .title {
     background: rgb(2,0,36);
-background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(17,68,193,1) 28%, rgba(163,43,7,1) 68%, rgba(0,0,0,1) 100%);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(17,68,193,1) 28%, rgba(163,43,7,1) 68%, rgba(0,0,0,1) 100%);
     padding-top: 0.5rem;
     margin-bottom: 1rem;
     font-size: 4rem;
-    font-family: bely-display,sans-serif;
-    font-weight: 400;
-  font-style: normal;
-  line-height: 6rem;
+    font-family: var(--font-1);
+    line-height: 6rem;
+  }
+
+  .title2 {
+    text-align: center;
+    background: rgb(2,0,36);
+background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(17,68,193,1) 28%, rgba(163,43,7,1) 68%, rgba(0,0,0,1) 100%);
+    padding-top: 0.5rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    font-size: 4rem;
+    font-family: var(--font-1);
+  line-height: 4.7rem;
   }
 
   .box__heading {
     color: #1144c1;
     font-size: 2rem;
-    font-family: bely-display,sans-serif;
-font-weight: 400;
-font-style: normal;
-padding-bottom: 0.25rem;
+    font-family: var(--font-1);
+    padding-bottom: 0.25rem;
 
   }
 
   .box1 {
     font-size: 1rem;
-    font-family: muli,sans-serif;
-font-weight: 400;
-font-style: normal;
-padding-left: 1rem;
+    font-family: var(--font-2);
+    padding-left: 1rem;
 
   }
 
@@ -296,17 +439,12 @@ padding-left: 1rem;
     font-size: 2.25rem;
     color: rgb(197, 132, 235);
     padding-left: 1rem;
-     font-family: bely-display,sans-serif;
-    font-weight: 400;
-  font-style: normal;
-    font-style: normal;
+    font-family: var(--font-1);
   }
 
   .p__insta2 {
     text-align: justify;
-    font-family: muli,sans-serif;
-    font-weight: 400;
-    font-style: normal;    
+    font-family: var(--font-2);    
     padding-left: 2rem;
     padding-right: 2rem;
   }
@@ -318,9 +456,7 @@ padding-left: 1rem;
     font-size: 3rem;
     margin-top: 1.5rem;
     color: white;
-    font-family: bely-display,sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    font-family: var(--font-1);
     height: auto;
     width: 100%;
   }
@@ -332,9 +468,7 @@ padding-left: 1rem;
     font-size: 3rem;
     margin-bottom: 40px;
     color: white;
-    font-family: bely-display,sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    font-family: var(--font-1);
     height: auto;
     width: 100%;
   }
@@ -347,7 +481,7 @@ padding-left: 1rem;
   }
 
   section.insta__img2 img {
-    width: 350px;
+    width: 300px;
     margin: 0 auto;
     display: block;
     padding: 0 auto;
@@ -414,6 +548,36 @@ padding-left: 1rem;
   display: block;
   width: 100%;
   }
+
+  .contact__res {
+    text-align: center;
+    font-family: var(--font-1);
+    font-size: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    color: rgb(197, 132, 235);
+  }
+
+  .mail {
+    text-align: center;
+    font-family: var(--font-2);
+    padding-left: 2rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 3rem;
+    margin-left: 9rem;
+    margin-bottom: 1.5rem;
+    width: 0.68%;
+  }
+
+  .image {
+    padding-left: 0.6rem;
+  }
   
 }
 
@@ -421,6 +585,16 @@ padding-left: 1rem;
 
 
 @media screen and (min-width: 700px) {
+
+
+  /* Index */
+
+  section.me img {
+    width: 700px;
+    margin: 0 auto;
+    display: block;
+    padding: 0 auto;
+  }
 
   /* Insta */
 
@@ -609,6 +783,13 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(232,54,0,1) 27%, rgba
 
 
 @media screen and (min-width: 1200px) {
+
+  section.me img {
+    width: 900px;
+    margin: 0 auto;
+    display: block;
+    padding: 0 auto;
+  }
 
   /* Insta */
 
