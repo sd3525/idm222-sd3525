@@ -244,15 +244,32 @@ video {
 
   /* Index */
 
+  .pic {
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-bottom: 0.8rem;
+    background-image: linear-gradient(rgb(160, 158, 158) .1rem, transparent .1rem), linear-gradient(90deg, rgb(160, 158, 158) .1rem, transparent .1rem);
+    background-size: 2rem 2rem;
+  }
+
   section.me img {
+    z-index: 1;
     width: 300px;
     margin: 0 auto;
     display: block;
     padding: 0 auto;
   }
 
+  .cs__card__top {
+    background-color:rgb(240, 235, 235);
+    background-image: linear-gradient(rgb(160, 158, 158) .1rem, transparent .1rem), linear-gradient(90deg, rgb(160, 158, 158) .1rem, transparent .1rem);
+    background-size: 2rem 2rem;
+    padding-bottom: 2rem;
+  }
+
   .description {
-    text-align: start;
+    text-align: center;
     font-family: var(--font-2);
     font-size: 1.2rem;
     padding-left: 2rem;
@@ -291,16 +308,16 @@ video {
     background-image: radial-gradient(circle, #c584eb, #e46fcf, #f95bab, #ff4e82, #ff4d57, #ed444e, #db3a45, #c9313d, #982147, #621d42, #31162d, #07010b);
   }
 
-
   .button {
     font-family: var(--font-1);
     font-size: 1.7rem;
     border: 0.2rem solid black; 
     background-image: radial-gradient(circle, #c584eb, #e46fcf, #f95bab, #ff4e82, #ff4d57, #ed444e, #db3a45, #c9313d, #982147, #621d42, #31162d, #07010b);
     color: white;
-    margin-left: 7rem;
-    padding: 1rem;
-    margin-bottom: 1rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding: 1.3rem;
     border-radius: 1.5rem;
     box-shadow: 3px 3px 3px #888888;
 
@@ -327,6 +344,7 @@ video {
   }
 
   .cs__title {
+    z-index: 2;
     color: rgb(197, 132, 235);
     font-family: var(--font-1);
     font-size: 2.5rem;
@@ -375,7 +393,7 @@ video {
   
 
   .index__insta {
-    width: 325px;
+    width: 310px;
     margin: 0 auto;
     display: block;
     margin-top: 2rem;
@@ -409,14 +427,16 @@ video {
 
   .title2 {
     text-align: center;
-    background: rgb(2,0,36);
-background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(17,68,193,1) 28%, rgba(163,43,7,1) 68%, rgba(0,0,0,1) 100%);
+    background-image: linear-gradient(rgb(160, 158, 158) .1rem, transparent .1rem), linear-gradient(90deg, rgb(160, 158, 158) .1rem, transparent .1rem);
+    background-size: 2rem 2rem;
     padding-top: 0.5rem;
     margin-top: 3rem;
-    margin-bottom: 1rem;
-    font-size: 4rem;
+    padding-top: 9rem;
+    height: 7rem;
+    padding-bottom: 10rem;
+    font-size: 6rem;
     font-family: var(--font-1);
-  line-height: 4.7rem;
+  line-height: 5.5rem;
   }
 
   .box__heading {
@@ -495,28 +515,28 @@ background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(17,68,193,1) 28%, rg
   }
 
   section.insta__img4 img {
-    width: 350px;
+    width: 310px;
     margin: 0 auto;
     display: block;
     padding: 0 auto;
   }
 
   section.insta__img5 img {
-    width: 350px;
+    width: 310px;
     margin: 0 auto;
     display: block;
     padding: 0 auto;
   }
 
   section.insta__img6 img {
-    width: 350px;
+    width: 310px;
     margin: 0 auto;
     display: block;
     padding: 0 auto;
   }
 
   section.insta__img7 img {
-    width: 350px;
+    width: 310px;
     margin: 0 auto;
     display: block;
     padding: 0 auto;
@@ -589,11 +609,106 @@ background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(17,68,193,1) 28%, rg
 
   /* Index */
 
+  .container__main {
+    background-color: #151515;
+      display: flex;
+  }
+
+  .cs__card__3 {
+    /* width: 100%; */
+ flex-direction: column;
+ padding-right: 2rem;
+ padding-left: 2rem;
+ padding-bottom: 2rem;
+ justify-content: space-between;
+  }
+
+  .cs__card {
+    flex: 1;
+    
+
+  }
+
+  .cs__card__text {
+    margin-left: 1.6rem;
+    margin-right: 1.6rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    background: rgb(0, 0, 0);
+    padding-bottom: 1rem;
+  }
+
+  .title2 {
+    text-align: center;
+    background-image: linear-gradient(rgb(160, 158, 158) .1rem, transparent .1rem), linear-gradient(90deg, rgb(160, 158, 158) .1rem, transparent .1rem);
+    background-size: 2rem 2rem;
+    padding-top: 0.5rem;
+    margin-top: 3rem;
+    padding-top: 5rem;
+    height: 7rem;
+    padding-bottom: 5rem;
+    font-size: 6rem;
+    font-family: var(--font-1);
+  line-height: 5.5rem;
+  }
+
+  .index__number {
+    margin-top: 0.5rem;
+    color: rgb(197, 132, 235);
+    padding-left: 1.5rem;
+    font-size: 4.5rem;
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: row;
+    float: left;
+    font-family: var(--font-1);
+  }
+
   section.me img {
-    width: 700px;
+    width: 500px;
     margin: 0 auto;
     display: block;
-    padding: 0 auto;
+    padding-bottom: 2rem;
+  }
+
+  .description {
+    text-align: center;
+    font-family: var(--font-2);
+    font-size: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 1.5rem;
+    line-height: 2.5rem;
+  }
+
+  .cs__card__top {
+    background-color:rgb(240, 235, 235);
+    background-image: linear-gradient(rgb(160, 158, 158) .1rem, transparent .1rem), linear-gradient(90deg, rgb(160, 158, 158) .1rem, transparent .1rem);
+    background-size: 2rem 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .button {
+    font-family: var(--font-1);
+    font-size: 2rem;
+    border: 0.2rem solid black; 
+    background-image: radial-gradient(circle, #c584eb, #e46fcf, #f95bab, #ff4e82, #ff4d57, #ed444e, #db3a45, #c9313d, #982147, #621d42, #31162d, #07010b);
+    color: white;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    border-radius: 1.5rem;
+    box-shadow: 3px 3px 3px #888888;
+
+  }
+
+  .pic {
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-bottom: 0.8rem;
+    background-image: linear-gradient(rgb(160, 158, 158) .1rem, transparent .1rem), linear-gradient(90deg, rgb(160, 158, 158) .1rem, transparent .1rem);
+    background-size: 2rem 2rem;
   }
 
   /* Insta */
