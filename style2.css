@@ -253,14 +253,6 @@ video {
     background-size: 2rem 2rem;
   }
 
-  section.me img {
-    z-index: 1;
-    width: 300px;
-    margin: 0 auto;
-    display: block;
-    padding: 0 auto;
-  }
-
   .cs__card__top {
     background-color:rgb(240, 235, 235);
     background-image: linear-gradient(rgb(160, 158, 158) .1rem, transparent .1rem), linear-gradient(90deg, rgb(160, 158, 158) .1rem, transparent .1rem);
@@ -292,6 +284,20 @@ video {
     margin-left: 1.7rem;
     margin-right: 1.7rem;
     background-image: radial-gradient(circle, #c584eb, #ae76e3, #9569db, #7a5dd4, #5a52cc, #404fbc, #254bab, #004699, #004075, #003249, #002024, #080c0b);
+  }
+
+  section.me img {
+    width: 300px;
+    margin: 0 auto;
+    display: block;
+    padding: 0 auto;
+  }
+
+  .sc__clear__medium img {
+    width: 500px;
+    margin: 0 auto;
+    display: block;
+    padding: 0 auto;
   }
 
   .cs__imgs2 {
@@ -348,6 +354,7 @@ video {
     color: rgb(197, 132, 235);
     font-family: var(--font-1);
     font-size: 2.5rem;
+    padding-right: 2rem;
     padding-left: 2rem;
     padding-top: 1rem;
     padding-bottom: 0.5rem;
@@ -387,7 +394,7 @@ video {
 
   .cs__card3 {
     margin-top: 2rem;
-    background: rgb(2,0,36);
+    background: black;
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(163,43,7,1) 25%, rgba(163,43,7,1) 75%, rgba(0,0,0,1) 100%);
   }
   
@@ -610,6 +617,8 @@ video {
   /* Index */
 
   .container__main {
+    margin-left: 2rem;
+    margin-right: 2rem;
     background-color: #151515;
       display: flex;
   }
@@ -625,14 +634,30 @@ video {
 
   .cs__card {
     flex: 1;
-    
+  
+  }
 
+  .index__insta {
+    width: 280px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 2rem;
+    padding: 0 auto;
+  }
+
+  .cs__card2 {
+    flex: 1;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-bottom: 0.8rem;
+    background-image: linear-gradient(rgb(160, 158, 158) .1rem, transparent .1rem), linear-gradient(90deg, rgb(160, 158, 158) .1rem, transparent .1rem);
+    background-size: 2rem 2rem;
   }
 
   .cs__card__text {
     margin-left: 1.6rem;
     margin-right: 1.6rem;
-    margin-top: 1rem;
+    margin-top: 1.7rem;
     margin-bottom: 2rem;
     background: rgb(0, 0, 0);
     padding-bottom: 1rem;
@@ -899,8 +924,16 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(232,54,0,1) 27%, rgba
 
 @media screen and (min-width: 1200px) {
 
+  .index__insta {
+    width: 800px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 2rem;
+    padding: 0 auto;
+  }
+
   section.me img {
-    width: 900px;
+    width: 500px;
     margin: 0 auto;
     display: block;
     padding: 0 auto;
