@@ -244,6 +244,13 @@ video {
 
   /* Index */
 
+  .name {
+    text-align: center;
+    font-family: var(--font-1);
+    font-size: 5rem;
+    margin: 2rem;
+  }
+
   .pic {
     justify-content: center;
     margin-top: 2rem;
@@ -288,9 +295,10 @@ video {
 
   section.me img {
     width: 300px;
-    margin: 0 auto;
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+    margin-left: 1rem;
     display: block;
-    padding: 0 auto;
   }
 
   .sc__clear__medium img {
@@ -304,30 +312,9 @@ video {
     margin-top: 6rem;
     margin-left: 1.7rem;
     margin-right: 1.7rem;
-    background-image: radial-gradient(circle, #1144c1, #4e4ec9, #7059d1, #8c65d8, #a672e0, #a06ccf, #9967bf, #9162af, #6c4a84, #4a325b, #2b1d35, #0d0113);
-  }
-
-  .cs__imgs3 {
-    margin-top: 6rem;
-    margin-left: 1.7rem;
-    margin-right: 1.7rem;
     background-image: radial-gradient(circle, #c584eb, #e46fcf, #f95bab, #ff4e82, #ff4d57, #ed444e, #db3a45, #c9313d, #982147, #621d42, #31162d, #07010b);
   }
 
-  .button {
-    font-family: var(--font-1);
-    font-size: 1.7rem;
-    border: 0.2rem solid black; 
-    background-image: radial-gradient(circle, #c584eb, #e46fcf, #f95bab, #ff4e82, #ff4d57, #ed444e, #db3a45, #c9313d, #982147, #621d42, #31162d, #07010b);
-    color: white;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    padding: 1.3rem;
-    border-radius: 1.5rem;
-    box-shadow: 3px 3px 3px #888888;
-
-  }
 
   .index__number {
     margin-top: 0.5rem;
@@ -368,6 +355,15 @@ video {
 
 
   .cs__card__text {
+    margin-left: 1.6rem;
+    margin-right: 1.6rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    background: rgb(0, 0, 0);
+    padding-bottom: 1rem;
+  }
+
+  .cs__card__text2 {
     margin-left: 1.6rem;
     margin-right: 1.6rem;
     margin-top: 1rem;
@@ -432,14 +428,13 @@ video {
     line-height: 6rem;
   }
 
-  .title2 {
+  .gridback {
     text-align: center;
     background-image: linear-gradient(rgb(160, 158, 158) .1rem, transparent .1rem), linear-gradient(90deg, rgb(160, 158, 158) .1rem, transparent .1rem);
-    background-size: 2rem 2rem;
-    padding-top: 0.5rem;
+    background-size: 2rem 2rem;  
     margin-top: 3rem;
-    padding-top: 9rem;
-    height: 7rem;
+    padding-top: 2rem;
+    height: 2rem;
     padding-bottom: 10rem;
     font-size: 6rem;
     font-family: var(--font-1);
@@ -577,7 +572,6 @@ video {
   }
 
   .contact__res {
-    text-align: center;
     font-family: var(--font-1);
     font-size: 2rem;
     padding-top: 1rem;
@@ -587,7 +581,6 @@ video {
   }
 
   .mail {
-    text-align: center;
     font-family: var(--font-2);
     padding-left: 2rem;
     padding-bottom: 1.5rem;
@@ -596,10 +589,7 @@ video {
   .container {
     display: flex;
     justify-content: space-between;
-    padding-right: 3rem;
-    margin-left: 9rem;
     margin-bottom: 1.5rem;
-    width: 0.68%;
   }
 
   .image {
@@ -616,6 +606,23 @@ video {
 
   /* Index */
 
+
+  .top__text {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-bottom: 0.8rem;
+    background-size: 2rem 2rem;
+  }
+
+  .cs__card__text2 {
+    margin-left: 1.6rem;
+    margin-right: 1.6rem;
+    margin-top: 1.7rem;
+    margin-bottom: 2rem;
+    background: rgb(0, 0, 0);
+    padding-bottom: 1rem;
+  }
+
   .container__main {
     margin-left: 2rem;
     margin-right: 2rem;
@@ -623,8 +630,23 @@ video {
       display: flex;
   }
 
+  .name {
+    text-align: center;
+    font-family: var(--font-1);
+    font-size: 5rem;
+    margin: 1rem;
+  }
+
+  p.description {
+    font-family: var(--font-2);
+    font-size: 1.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    line-height: 3rem;
+  }
+
   .cs__card__3 {
-    /* width: 100%; */
+    /* width: 90%; */
  flex-direction: column;
  padding-right: 2rem;
  padding-left: 2rem;
@@ -663,10 +685,8 @@ video {
     padding-bottom: 1rem;
   }
 
-  .title2 {
+  .gridback {
     text-align: center;
-    background-image: linear-gradient(rgb(160, 158, 158) .1rem, transparent .1rem), linear-gradient(90deg, rgb(160, 158, 158) .1rem, transparent .1rem);
-    background-size: 2rem 2rem;
     padding-top: 0.5rem;
     margin-top: 3rem;
     padding-top: 5rem;
@@ -690,8 +710,8 @@ video {
   }
 
   section.me img {
-    width: 500px;
-    margin: 0 auto;
+    width: 350px;
+    padding: 1rem;
     display: block;
     padding-bottom: 2rem;
   }
@@ -725,15 +745,6 @@ video {
     border-radius: 1.5rem;
     box-shadow: 3px 3px 3px #888888;
 
-  }
-
-  .pic {
-    justify-content: center;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    padding-bottom: 0.8rem;
-    background-image: linear-gradient(rgb(160, 158, 158) .1rem, transparent .1rem), linear-gradient(90deg, rgb(160, 158, 158) .1rem, transparent .1rem);
-    background-size: 2rem 2rem;
   }
 
   /* Insta */
@@ -930,6 +941,39 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(232,54,0,1) 27%, rgba
     display: block;
     margin-top: 2rem;
     padding: 0 auto;
+  }
+
+  .name {
+    text-align: center;
+    font-family: var(--font-1);
+    font-size: 6rem;
+    padding: 1rem;
+  }
+
+  .cs__card__text {
+    margin-left: 1.6rem;
+    margin-right: 1.6rem;
+    margin-top: 1.7rem;
+    margin-bottom: 2rem;
+    background: rgb(0, 0, 0);
+    padding-bottom: 1rem;
+  }
+
+  .cs__card__text2 {
+    margin-left: -2rem;
+    margin-right: -1.6rem;
+    margin-top: 1.7rem;
+    margin-bottom: 2rem;
+    background: rgb(0, 0, 0);
+    padding-bottom: 1rem;
+  }
+
+  p.description {
+    font-family: var(--font-2);
+    font-size: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    line-height: 3rem;
   }
 
   section.me img {
