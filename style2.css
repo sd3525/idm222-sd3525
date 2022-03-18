@@ -234,6 +234,18 @@ body {
   padding-bottom: 1.5rem;
 }
 
+a:link {
+  color: #fdfdfd;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #ffffff;
+  background-color: transparent;
+  text-decoration: none;
+}
+
 
 @media screen and (min-width: 0px) {
 
@@ -432,7 +444,7 @@ body {
     background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(17,68,193,1) 28%, rgba(163,43,7,1) 68%, rgba(0,0,0,1) 100%);
     padding-top: 0.5rem;
     margin-bottom: 1rem;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-family: var(--font-1);
     line-height: 4rem;
   }
@@ -458,10 +470,19 @@ body {
 
   }
 
+  .survey {
+    padding: 1rem;
+    font-size: 1rem;
+    margin: 0.5rem;
+    font-family: var(--font-2);
+  }
+
   .box1 {
     font-size: 1rem;
-    font-family: var(--font-2);
+    font-family: var(--font-2);    
     padding-left: 1rem;
+    padding-right: 1rem;
+    line-height: 1.5rem;
 
   }
 
@@ -473,7 +494,29 @@ body {
     font-family: var(--font-1);
   }
 
+  .h4__insta {
+    justify-content: flex-start;
+    font-size: 2rem;
+    color: rgb(197, 132, 235);
+    padding-left: 2.5rem;
+    font-family: var(--font-1);
+  }
+
   .p__insta2 {
+    font-family: var(--font-2);    
+    padding-left: 2rem;
+    padding-right: 2rem;
+    line-height: 1.5rem;
+  }
+
+  .p__insta5 {
+    font-family: var(--font-2);    
+    padding-left: 2rem;
+    padding-right: 2rem;
+    line-height: 1.5rem;
+  }
+
+  .link {
     font-family: var(--font-2);    
     padding-left: 2rem;
     padding-right: 2rem;
@@ -631,15 +674,6 @@ body {
     background-size: 2rem 2rem;
   }
 
-  .cs__card__text2 {
-    margin-left: 1.6rem;
-    margin-right: 1.6rem;
-    margin-top: 1.7rem;
-    margin-bottom: 2rem;
-    background: rgb(0, 0, 0);
-    padding-bottom: 1rem;
-  }
-
   .container__main {
     margin-left: 2rem;
     margin-right: 2rem;
@@ -653,6 +687,15 @@ body {
     font-size: 5rem;
     margin: 1rem;
   }
+
+  .cs__imgs2 {
+    margin-top: 6rem;
+    margin-left: 1.7rem;
+    margin-right: 1.7rem;
+    background-image: radial-gradient(circle, #c584eb, #ae76e3, #9569db, #7a5dd4, #5a52cc, #404fbc, #254bab, #004699, #004075, #003249, #002024, #080c0b);
+  }
+
+  
 
   p.description {
     font-family: var(--font-2);
@@ -683,6 +726,27 @@ body {
     margin-top: 2rem;
     padding: 0 auto;
   }
+
+  .article__card2 {
+    /* width: 100%; */
+    flex-direction: row;
+    padding-right: 1rem;
+    padding-left: 0.7rem;
+    padding-bottom: 1rem;
+    background-color: #151515;
+    justify-content: space-between;
+  }
+
+  .cs__card__text2 {
+    margin-left: 1.6rem;
+    margin-right: 1.6rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    background: rgb(0, 0, 0);
+    padding-bottom: 1rem;
+  }
+
+ 
 
   .cs__card2 {
     flex: 1;
@@ -750,6 +814,14 @@ body {
     padding-bottom: 2rem;
   }
 
+  .desc__index {
+    font-family: var(--font-2);
+    font-size: 1.2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    line-height: 1.5rem;
+  }
+
   .button {
     font-family: var(--font-1);
     font-size: 2rem;
@@ -765,6 +837,13 @@ body {
   }
 
   /* Insta */
+  .index__insta {
+    width: 500px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 2rem;
+    padding: 0 auto;
+  }
 
   .title {
     margin-top: 6rem;
@@ -806,6 +885,30 @@ font-style: normal;
   }
 
   .p__insta2 {
+    font-size: 1.25rem;
+    text-align: justify;
+    font-family: var(--font-2);   
+    font-weight: 400;
+    line-height: 1.8rem;
+    font-style: raly normal;    
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+  }
+
+  .p__insta5 {
+    font-size: 1.25rem;
+    text-align: justify;
+    font-family: var(--font-2);   
+    font-weight: 400;
+    line-height: 1.8rem;
+    font-style: raly normal;    
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+  }
+
+  .link {
     font-size: 1.25rem;
     text-align: justify;
     font-family: var(--font-2);   
@@ -931,6 +1034,14 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(232,54,0,1) 27%, rgba
   background-color: white;
 }
 
+.survey {
+  padding-top: 1.5rem;
+  padding-left: 10rem;
+  font-size: 1.1rem;
+  margin: 2rem;
+  font-family: var(--font-2);
+}
+
 .number {
   margin-top: 1rem;
   color: #1144c1;
@@ -1039,6 +1150,18 @@ background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(163,43,7,1) 68%, rgb
 
   }
 
+  .link {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-align: justify;
+    font-family: var(--font-2);   
+    font-weight: 400;
+    font-style: normal;    
+    padding-left: 3rem;
+    padding-right: 3rem;
+
+  }
+
   .box__heading {
     color: #1144c1;
     font-size: 3rem;
@@ -1050,11 +1173,20 @@ padding-bottom: 0.25rem;
   }
 
   .box1 {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     font-family: var(--font-2);
 font-weight: 400;
+line-height: 2rem;
 font-style: normal;
 
+  }
+
+  .survey {
+    padding-top: 1.5rem;
+    padding-left: 10rem;
+    font-size: 1.3rem;
+    margin: 2rem;
+    font-family: var(--font-2);
   }
 
   section.insta__img img {
@@ -1187,6 +1319,25 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(232,54,0,1) 27%, rgba
     .case-study__top-container {
       display: flex;
       flex-direction: column;
+    }
+
+    .cs__title {
+      z-index: 2;
+      color: rgb(197, 132, 235);
+      font-family: var(--font-1);
+      font-size: 3rem;
+      padding-right: 2rem;
+      padding-left: 2rem;
+      padding-top: 1rem;
+      padding-bottom: 0.5rem;
+    }
+
+    .desc__index {
+      font-family: var(--font-2);
+      font-size: 1.6rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      line-height: 2.5rem;
     }
 
     
