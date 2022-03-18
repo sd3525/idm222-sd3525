@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SoundCloud Redesign</title>
+    <link rel="stylesheet" href="style2.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/xsp5bai.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/xsp5bai.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/xsp5bai.css" />
+  </head>
+  <body>
+    <nav role="navigation">
+      <div id="menuToggle">
+        <!--
+        A fake / hidden checkbox is used as click reciever,
+        so can use the :checked selector on it.
+        -->
+        <input type="checkbox" />
+
+        <!--
+        Some spans to act as a hamburger.
+        -->
+        <span></span>
+        <span></span>
+        <span></span>
+
+        <ul id="menu">
+          <a href="index.html"><li>Home</li></a>
+          <a href="resume.html"><li>Resume</li></a>
+          <a href="photo.html"><li>About</li></a>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <div class="case-study">
+        <div class="title">SoundCloud Redesign</div>
+        <div class="case-study__top-container">
+          <section class="index__insta">
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="./images/insta__clear__large.png"
+              />
+              <source
+                media="(min-width: 700px)"
+                srcset="./images/insta__clear__medium.png"
+              />
+              <source
+                media="(min-width: 0px)"
+                srcset="./images/insta__clear__small.png"
+              />
+              <img
+                src="./images/insta__clear__small.png"
+                class="index__insta"
+                alt="insta__clear__small"
+              />
+            </picture>
+          </section>
+        </div>
+        <div class="box__insta2">
+          <div class="case-study__overview">
+            <h2 class="box__heading">Overview:</h2>
+            <p class="box1">
+              After reading through what appeared to be SoundCloud's mission
+              statement, the words “most diverse creator community on earth”,
+              “share music and connect directly with artists, unearth
+              breakthrough tracks, open platform that directly connects creators
+              and their fans across the globe , and receive detailed stats and
+              feedback from the SoundCloud community” stood out to me the most.
+              Rather than focusing on what I thought was best for the app, I
+              took the perspective of the creators and improved features which
+              would best fit their motives.
+            </p>
+            <h2 class="box__heading">Problem/Solution</h2>
+            <p class="box1">
+              I was introduced to SoundCloud by a friend who used it as a
+              platform to post music that he produced.I had always found it
+              challenging to find small artists who had the specific style of
+              music which I enjoyed. That made me wonder if SoundCloud was doing
+              a good enough job in helping these small artists to gain enough
+              exposure. This thought led me to actually redesign the mobile
+              application in a way that I believed would be the best for small
+              artists to gain visibility through SoundCloud, which was through
+              the collaboration experience for artists
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="overview">Process</div>
+    <div class="article__card2">
+      <div class="number">01</div>
+      <div class="hr"><hr /></div>
+      <h3 class="h3__insta">Collaborator Experience Survey</h3>
+      <p class="p__insta2">
+        Based on my research, I put together key questions to gain a better
+        understanding of the issues small artists face when trying to find a
+        collaboration partner. I emailed the survey to the small artists I knew
+        and got the answers from six of them. I analyzed the responses to get a
+        quick understanding of the biggest pain points (blue is yes and red is
+        no).
+      </p>
+      <li>
+        How many times have you collaborated? (blue is 1 time, red is 2 times,
+        and yellow is 3 times or more).
+      </li>
+      <li>Artists of a similar genre to yourself easy to find?</li>
+      <li>You find the collaboration search process difficult?</li>
+      <li>
+        You collaborated with any other artists or are you currently looking for
+        any collaboration opportunities?
+      </li>
+    </div>
+
+    <section class="insta__img6">
+      <picture>
+        <source
+          media="(min-width: 1200px)"
+          srcset="./images/highfidelitywireframe-large.jpg"
+        />
+        <source
+          media="(min-width: 0px)"
+          srcset="./images/highfidelitywireframe-medium.jpg"
+        />
+        <img
+          src="./images/highfidelitywireframe-medium.jpg"
+          class="insta-img6"
+          alt="highfidelitywireframe-medium"
+        />
+      </picture>
+    </section>
+
+    <li>
+      Did you notice an increase in followers right after your collaboration?
+    </li>
+    <li>Do you want to pursue music as a career?</li>
+    <li>Has anybody ever asked you to collaborate?</li>
+
+    <section class="insta__img6">
+      <picture>
+        <source
+          media="(min-width: 1200px)"
+          srcset="./images/highfidelitywireframe-large.jpg"
+        />
+        <source
+          media="(min-width: 0px)"
+          srcset="./images/highfidelitywireframe-medium.jpg"
+        />
+        <img
+          src="./images/highfidelitywireframe-medium.jpg"
+          class="insta-img6"
+          alt="highfidelitywireframe-medium"
+        />
+      </picture>
+    </section>
+    <li>
+      Can you list all of the platforms (or ways) you use to find collaboration
+      opportunities (SoundCloud, Facebook, etc)
+    </li>
+    <section class="insta__img6">
+      <picture>
+        <source
+          media="(min-width: 1200px)"
+          srcset="./images/highfidelitywireframe-large.jpg"
+        />
+        <source
+          media="(min-width: 0px)"
+          srcset="./images/highfidelitywireframe-medium.jpg"
+        />
+        <img
+          src="./images/highfidelitywireframe-medium.jpg"
+          class="insta-img6"
+          alt="highfidelitywireframe-medium"
+        />
+      </picture>
+    </section>
+    <li>
+      Do you take into consideration any of these things when searching for a
+      collaboration opportunity?
+    </li>
+    <section class="insta__img6">
+      <picture>
+        <source
+          media="(min-width: 1200px)"
+          srcset="./images/highfidelitywireframe-large.jpg"
+        />
+        <source
+          media="(min-width: 0px)"
+          srcset="./images/highfidelitywireframe-medium.jpg"
+        />
+        <img
+          src="./images/highfidelitywireframe-medium.jpg"
+          class="insta-img6"
+          alt="highfidelitywireframe-medium"
+        />
+      </picture>
+    </section>
+    <p class="p__insta2">
+      Through the data that I gained from the survey, it was evident to me that
+      there was room for improvement in SoundCloud design to help small artists
+      to gain more exposure through the app and make the collaboration process
+      less difficult.
+    </p>
+
+    <div class="article__card2">
+      <div class="number">02</div>
+      <div class="hr"><hr /></div>
+      <h3 class="h3__insta">Brief</h3>
+      <p class="p__insta2">
+        After brainstorming and going through all of my results from the survey
+        and interview, I came up with the final brief to formalize my ideas.
+      </p>
+      <div class="p-sc2">
+        <a
+          href="https://sd3525.files.wordpress.com/2021/10/soundcloud-app-redesign-brief-1.pdf"
+          target="SoundCloud Brief"
+          ><div class="a"><u>SoundCloud Brief</u></div>
+        </a>
+      </div>
+    </div>
+
+    <div class="article__card2">
+      <div class="number">03</div>
+      <div class="hr"><hr /></div>
+      <h3 class="h3__insta">Understanding the Userflow</h3>
+      <p class="p__insta2">
+        By using Screenshots from SoundCloud’s mobile application, I was able to
+        gain a better understanding of how a user goes from screen to screen in
+        order to incorporate my design into the existing flow.
+      </p>
+    </div>
+
+    <section class="insta__img6">
+      <picture>
+        <source
+          media="(min-width: 1200px)"
+          srcset="./images/highfidelitywireframe-large.jpg"
+        />
+        <source
+          media="(min-width: 0px)"
+          srcset="./images/highfidelitywireframe-medium.jpg"
+        />
+        <img
+          src="./images/highfidelitywireframe-medium.jpg"
+          class="insta-img6"
+          alt="highfidelitywireframe-medium"
+        />
+      </picture>
+    </section>
+
+    <div class="article__card2">
+      <div class="number">04</div>
+      <div class="hr"><hr /></div>
+      <h3 class="h3__insta">Low Fidelity Wireframe</h3>
+      <p class="p__insta2">
+        In order to map out my new design, I created a low fidelity wireframe
+        that helped me to visualize the new process and ensure that new features
+        were properly incorporated.
+      </p>
+    </div>
+
+    <section class="insta__img6">
+      <picture>
+        <source
+          media="(min-width: 1200px)"
+          srcset="./images/highfidelitywireframe-large.jpg"
+        />
+        <source
+          media="(min-width: 0px)"
+          srcset="./images/highfidelitywireframe-medium.jpg"
+        />
+        <img
+          src="./images/highfidelitywireframe-medium.jpg"
+          class="insta-img6"
+          alt="highfidelitywireframe-medium"
+        />
+      </picture>
+    </section>
+
+    <div class="article__card2">
+      <div class="number">05</div>
+      <div class="hr"><hr /></div>
+      <h3 class="h3__insta">Observation of SoundCloud's Mobile App Screens</h3>
+      <p class="p__insta2">
+        I analyzed the existing SoundCloud layout and design in order to
+        preserve the style throughout my redesign. Below are screenshots of the
+        current app:
+      </p>
+    </div>
+
+    <section class="insta__img6">
+      <picture>
+        <source
+          media="(min-width: 1200px)"
+          srcset="./images/highfidelitywireframe-large.jpg"
+        />
+        <source
+          media="(min-width: 0px)"
+          srcset="./images/highfidelitywireframe-medium.jpg"
+        />
+        <img
+          src="./images/highfidelitywireframe-medium.jpg"
+          class="insta-img6"
+          alt="highfidelitywireframe-medium"
+        />
+      </picture>
+    </section>
+
+    <div class="article__card2">
+      <div class="number">06</div>
+      <div class="hr"><hr /></div>
+      <h3 class="h3__insta">High Fidelity Design</h3>
+      <h3 class="h3__insta">Onboarding</h3>
+      <p class="p__insta2">
+        When signing into the app, the user would get the choice to sign in or
+        create a new account. Since I decided to only cater my design to new
+        users, the only option would be to create an account. This would then
+        lead to either signing up as a listener or a creator since the two
+        experiences are very different for my app.
+      </p>
+    </div>
+
+    <section class="insta__img6">
+      <picture>
+        <source
+          media="(min-width: 1200px)"
+          srcset="./images/highfidelitywireframe-large.jpg"
+        />
+        <source
+          media="(min-width: 0px)"
+          srcset="./images/highfidelitywireframe-medium.jpg"
+        />
+        <img
+          src="./images/highfidelitywireframe-medium.jpg"
+          class="insta-img6"
+          alt="highfidelitywireframe-medium"
+        />
+      </picture>
+    </section>
+
+    <p class="p__insta2">
+      If the user selects listener, the next step would be to pick a genre of
+      music which they like to listen. When the listener selects a genre, the
+      box will get outlined in orange. This feature is beneficial for the
+      listener because they can be exposed to more of the music that they enjoy
+      on their homepage, but it is also beneficial to small artists because it
+      narrows the range of music that a user can see, making it more likely for
+      the small artist to be discovered.
+    </p>
+
+    <section class="insta__img6">
+      <picture>
+        <source
+          media="(min-width: 1200px)"
+          srcset="./images/highfidelitywireframe-large.jpg"
+        />
+        <source
+          media="(min-width: 0px)"
+          srcset="./images/highfidelitywireframe-medium.jpg"
+        />
+        <img
+          src="./images/highfidelitywireframe-medium.jpg"
+          class="insta-img6"
+          alt="highfidelitywireframe-medium"
+        />
+      </picture>
+    </section>
+
+    <p class="p__insta2">
+      If a user selects the creator option on the second screen, they would get
+      the option to pick a genre which they make music in. When the user selects
+      a genre, the box will be outlined in orange.
+    </p>
+
+    <section class="insta__img6">
+      <picture>
+        <source
+          media="(min-width: 1200px)"
+          srcset="./images/highfidelitywireframe-large.jpg"
+        />
+        <source
+          media="(min-width: 0px)"
+          srcset="./images/highfidelitywireframe-medium.jpg"
+        />
+        <img
+          src="./images/highfidelitywireframe-medium.jpg"
+          class="insta-img6"
+          alt="highfidelitywireframe-medium"
+        />
+      </picture>
+    </section>
+
+    <div class="article__card2">
+      <div class="number">07</div>
+      <div class="hr"><hr /></div>
+      <h3 class="h3__insta">Best Match: Listener</h3>
+      <p class="p__insta2">
+        Step 1, 2, and 3 all narrow the results because a music genre and style
+        can include various moods to it, so these features guarantee the user
+        satisfaction and give way for them to find small artists in step 4. Step
+        4 includes a star ranking system which is based on what artists fit the
+        users criteria best at 5 stars and the worst at 1 star.
+      </p>
+    </div>
+
+    <section class="insta__img6">
+      <picture>
+        <source
+          media="(min-width: 1200px)"
+          srcset="./images/highfidelitywireframe-large.jpg"
+        />
+        <source
+          media="(min-width: 0px)"
+          srcset="./images/highfidelitywireframe-medium.jpg"
+        />
+        <img
+          src="./images/highfidelitywireframe-medium.jpg"
+          class="insta-img6"
+          alt="highfidelitywireframe-medium"
+        />
+      </picture>
+    </section>
+
+    <section class="insta__img6">
+      <picture>
+        <source
+          media="(min-width: 1200px)"
+          srcset="./images/highfidelitywireframe-large.jpg"
+        />
+        <source
+          media="(min-width: 0px)"
+          srcset="./images/highfidelitywireframe-medium.jpg"
+        />
+        <img
+          src="./images/highfidelitywireframe-medium.jpg"
+          class="insta-img6"
+          alt="highfidelitywireframe-medium"
+        />
+      </picture>
+    </section>
+
+    <div class="article__card2">
+      <div class="number">07</div>
+      <div class="hr"><hr /></div>
+      <h3 class="h3__insta">Best Match: Creator</h3>
+      <p class="p__insta2">
+        The first two steps of finding the best collaboration partner for the
+        creator include picking what type of creator and genre of music they
+        want their collaboration partner to specialize in.
+      </p>
+    </div>
+
+    <section class="insta__img6">
+      <picture>
+        <source
+          media="(min-width: 1200px)"
+          srcset="./images/highfidelitywireframe-large.jpg"
+        />
+        <source
+          media="(min-width: 0px)"
+          srcset="./images/highfidelitywireframe-medium.jpg"
+        />
+        <img
+          src="./images/highfidelitywireframe-medium.jpg"
+          class="insta-img6"
+          alt="highfidelitywireframe-medium"
+        />
+      </picture>
+    </section>
+
+    <p class="p__insta2">
+      The 3rd step is used in order to see how many people are near the creators
+      area. The creator gets the freedom to choose how big or small the radius
+      of creators can be and how many people are in their radius. The pins in
+      the last slide are clickable so the creator can go to the specific artists
+      page
+    </p>
+
+    <section class="insta__img6">
+      <picture>
+        <source
+          media="(min-width: 1200px)"
+          srcset="./images/highfidelitywireframe-large.jpg"
+        />
+        <source
+          media="(min-width: 0px)"
+          srcset="./images/highfidelitywireframe-medium.jpg"
+        />
+        <img
+          src="./images/highfidelitywireframe-medium.jpg"
+          class="insta-img6"
+          alt="highfidelitywireframe-medium"
+        />
+      </picture>
+    </section>
+
+    <p class="p__insta2">
+      For the 4th step, the user can select the followers and plays range. Based
+      on what people have told me, this feature is useful for them to understand
+      the level of skill the artist has and whether or not they are a good fit
+      for them. Step 5 is choosing the best match through a star rank system
+      which is based on who fits the user’s criteria the most and will then lead
+      them to the artist’s page.
+    </p>
+
+    <section class="insta__img6">
+      <picture>
+        <source
+          media="(min-width: 1200px)"
+          srcset="./images/highfidelitywireframe-large.jpg"
+        />
+        <source
+          media="(min-width: 0px)"
+          srcset="./images/highfidelitywireframe-medium.jpg"
+        />
+        <img
+          src="./images/highfidelitywireframe-medium.jpg"
+          class="insta-img6"
+          alt="highfidelitywireframe-medium"
+        />
+      </picture>
+    </section>
+
+    <div class="article__card2">
+      <div class="number">08</div>
+      <div class="hr"><hr /></div>
+      <h3 class="h3__insta">Artists you May Like</h3>
+      <p class="p__insta2">
+        On the home page, I created another feature which is based on
+        SoundCloud’s “More of what you like” section where they suggest songs
+        based on what the user has liked or played. I based my section on
+        artists who collaborated with the artists of songs the user has recently
+        played or liked. This helps small artists gain more exposure and
+        listeners to find more songs that they could like.
+      </p>
+    </div>
+
+    <section class="insta__img6">
+      <picture>
+        <source
+          media="(min-width: 1200px)"
+          srcset="./images/highfidelitywireframe-large.jpg"
+        />
+        <source
+          media="(min-width: 0px)"
+          srcset="./images/highfidelitywireframe-medium.jpg"
+        />
+        <img
+          src="./images/highfidelitywireframe-medium.jpg"
+          class="insta-img6"
+          alt="highfidelitywireframe-medium"
+        />
+      </picture>
+    </section>
+
+    <div class="article__card2">
+      <div class="number">09</div>
+      <div class="hr"><hr /></div>
+      <h3 class="h3__insta">Explore Page</h3>
+      <p class="p__insta2">
+        Artists will also be able to gain exposure through the explore page.
+        Before the user starts typing, they will see rising artists from each
+        genre of music. After the user enters the artist or song, the search
+        engine will show that artist’s collaborators and they will have a star
+        rank next to their name. For creators, it reveals how good of a
+        collaboration partner they would be and for listeners it reveals how
+        well the artist would fit their music taste.
+      </p>
+    </div>
+
+    <section class="insta__img6">
+      <picture>
+        <source
+          media="(min-width: 1200px)"
+          srcset="./images/highfidelitywireframe-large.jpg"
+        />
+        <source
+          media="(min-width: 0px)"
+          srcset="./images/highfidelitywireframe-medium.jpg"
+        />
+        <img
+          src="./images/highfidelitywireframe-medium.jpg"
+          class="insta-img6"
+          alt="highfidelitywireframe-medium"
+        />
+      </picture>
+    </section>
+    <div class="contact__res">Contact Me:</div>
+      <div class="mail">sd3525@drexel.edu</div>
+      <div class="container">
+        <a href="https://www.instagram.com/photondesignbysash/">
+          <img
+            src="https://www.sashademo.com/images/instaicon.png"
+            alt="insta"
+          />
+        </a>
+        <div class="image"></div>
+        <a href="https://www.linkedin.com/in/sasha-demo-9277921b7/">
+          <img
+            src="https://www.sashademo.com/images/linkin.png"
+            alt="linkedin"
+          />
+        </a>
+        <div class="image"></div>
+      </div>
+  </body>
+</html>

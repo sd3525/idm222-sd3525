@@ -411,7 +411,7 @@ body {
 
   .vid2 {
     justify-content: center;
-    margin-left: 5rem;
+    margin-left: 0.5rem;
   }
 
   .number {
@@ -615,6 +615,14 @@ body {
 
   /* Index */
 
+  .container2 {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 1rem;
+    right: 10rem;
+    z-index: 50;
+  }
 
   .top__text {
     margin-top: 2rem;
@@ -669,7 +677,7 @@ body {
   }
 
   .index__insta {
-    width: 280px;
+    width: 310px;
     margin: 0 auto;
     display: block;
     margin-top: 2rem;
@@ -759,6 +767,7 @@ body {
   /* Insta */
 
   .title {
+    margin-top: 6rem;
     background: rgb(2,0,36);
 background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(163,43,7,1) 68%, rgba(0,0,0,1) 100%);
     font-size: 4rem;
@@ -803,7 +812,7 @@ font-style: normal;
     font-weight: 400;
     line-height: 1.8rem;
     font-style: raly normal;    
-    padding-left: 1rem;
+    padding-left: 2rem;
     padding-right: 2rem;
 
   }
@@ -900,6 +909,11 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(232,54,0,1) 27%, rgba
   margin-top: 1rem;
   margin-bottom: 0.5rem;
   color: rgba(232,54,0,1);
+}
+
+.vid2 {
+  display: flex;
+  justify-content: center;
 }
 
 .vid1 {
@@ -1007,14 +1021,21 @@ background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(163,43,7,1) 68%, rgb
   font-style: normal;
   }
 
+  .vid2 {
+    margin-top: 1rem;
+    justify-content: center;
+    margin-left: 5rem;
+  }
+
   .p__insta2 {
     font-size: 1.5rem;
+    line-height: 2rem;
     text-align: justify;
     font-family: var(--font-2);   
     font-weight: 400;
     font-style: normal;    
-    padding-left: 1rem;
-    padding-right: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
 
   }
 
