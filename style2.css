@@ -4,7 +4,7 @@
   --background-color: #151515;
   --text-color: white;
   --font-1: "bely-display";
-  --font-2: "raleway";
+  --font-2: 'Raleway', sans-serif;;
   --heading3-padding: 1rem;
 
 }
@@ -59,7 +59,7 @@ html {
 
 body {
   margin: 0;
-  font-family: tenez,sans-serif;
+  font-family: raleway,sans-serif;
   background-color: #151515;
   color:  white;
 }
@@ -72,11 +72,6 @@ body {
   padding-bottom: 2rem;
   background-color: #151515;
   justify-content: space-between;
-}
-
-video {
-    padding: 1rem;
-
 }
 
 
@@ -260,6 +255,12 @@ video {
     background-size: 2rem 2rem;
   }
 
+  video {
+    justify-content: center;
+    padding: 0.5rem;
+
+}
+
   .cs__card__top {
     background-color:rgb(240, 235, 235);
     background-image: linear-gradient(rgb(160, 158, 158) .1rem, transparent .1rem), linear-gradient(90deg, rgb(160, 158, 158) .1rem, transparent .1rem);
@@ -299,13 +300,6 @@ video {
     margin-right: 2rem;
     margin-left: 1rem;
     display: block;
-  }
-
-  .sc__clear__medium img {
-    width: 500px;
-    margin: 0 auto;
-    display: block;
-    padding: 0 auto;
   }
 
   .cs__imgs2 {
@@ -405,10 +399,25 @@ video {
 
   /* Insta */
 
+  .article__card2 {
+    /* width: 100%; */
+    flex-direction: row;
+    padding-right: 1rem;
+    padding-left: 0.7rem;
+    padding-bottom: 1rem;
+    background-color: #151515;
+    justify-content: space-between;
+  }
+
+  .vid2 {
+    justify-content: center;
+    margin-left: 5rem;
+  }
+
   .number {
     margin-top: 1rem;
+    margin-left: 0.5rem;
     color: #1144c1;
-    padding-top: 40px;
     padding-right: 100%;
     font-size: 3rem;
     justify-content: flex-start;
@@ -423,9 +432,9 @@ video {
     background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(17,68,193,1) 28%, rgba(163,43,7,1) 68%, rgba(0,0,0,1) 100%);
     padding-top: 0.5rem;
     margin-bottom: 1rem;
-    font-size: 4rem;
+    font-size: 3rem;
     font-family: var(--font-1);
-    line-height: 6rem;
+    line-height: 4rem;
   }
 
   .gridback {
@@ -443,7 +452,7 @@ video {
 
   .box__heading {
     color: #1144c1;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-family: var(--font-1);
     padding-bottom: 0.25rem;
 
@@ -458,17 +467,17 @@ video {
 
   .h3__insta {
     justify-content: flex-start;
-    font-size: 2.25rem;
+    font-size: 2rem;
     color: rgb(197, 132, 235);
     padding-left: 1rem;
     font-family: var(--font-1);
   }
 
   .p__insta2 {
-    text-align: justify;
     font-family: var(--font-2);    
     padding-left: 2rem;
     padding-right: 2rem;
+    line-height: 1.5rem;
   }
 
   .overview {
@@ -771,7 +780,7 @@ padding-bottom: 0.25rem;
 
   .box1 {
     font-size: 1.2rem;
-    font-family: muli,sans-serif;
+    font-family: var(--font-2);;
 font-weight: 400;
 font-style: normal;
 
@@ -790,9 +799,10 @@ font-style: normal;
   .p__insta2 {
     font-size: 1.25rem;
     text-align: justify;
-    font-family: muli,sans-serif;
+    font-family: var(--font-2);   
     font-weight: 400;
-    font-style: normal;    
+    line-height: 1.8rem;
+    font-style: raly normal;    
     padding-left: 1rem;
     padding-right: 2rem;
 
@@ -893,7 +903,7 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(232,54,0,1) 27%, rgba
 }
 
 .vid1 {
-  padding-left: 400px;
+  padding-left: 1rem;
   display: flex;
   justify-content: center;
 }
@@ -1000,7 +1010,7 @@ background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(163,43,7,1) 68%, rgb
   .p__insta2 {
     font-size: 1.5rem;
     text-align: justify;
-    font-family: muli,sans-serif;
+    font-family: var(--font-2);   
     font-weight: 400;
     font-style: normal;    
     padding-left: 1rem;
@@ -1020,7 +1030,7 @@ padding-bottom: 0.25rem;
 
   .box1 {
     font-size: 1.6rem;
-    font-family: muli,sans-serif;
+    font-family: var(--font-2);
 font-weight: 400;
 font-style: normal;
 
@@ -1158,9 +1168,7 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(232,54,0,1) 27%, rgba
       flex-direction: column;
     }
 
-    .vid2 {
-      margin-left: 5rem;
-    }
+    
 
 }
 
