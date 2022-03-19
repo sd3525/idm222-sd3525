@@ -602,6 +602,16 @@ a:visited {
     align-items: center;
   }
 
+  .overview__new {
+    font-family: var(--font-1);
+    text-align: center;
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(232,54,0,1) 27%, rgba(17,68,193,1) 56%, rgba(232,54,0,1) 79%, rgba(0,0,0,1) 100%);
+      font-size: 3rem;
+      margin-top: 4rem;
+      color: white;
+  }
+
   .overview2 {
     font-size: 5rem;
     margin-top: 1rem;
