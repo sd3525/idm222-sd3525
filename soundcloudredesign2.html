@@ -11,30 +11,20 @@
     <link rel="stylesheet" href="https://use.typekit.net/xsp5bai.css" />
   </head>
   <body>
-    <nav role="navigation">
-      <div id="menuToggle">
-        <!--
-        A fake / hidden checkbox is used as click reciever,
-        so can use the :checked selector on it.
-        -->
-        <input type="checkbox" />
-
-        <!--
-        Some spans to act as a hamburger.
-        -->
-        <span></span>
-        <span></span>
-        <span></span>
-
-        <ul id="menu">
-          <a href="index.html"><li>Home</li></a>
-          <a href="resume.html"><li>Resume</li></a>
-          <a href="photo.html"><li>About</li></a>
-        </ul>
-      </div>
-    </nav>
 
     <main>
+        <a href="index.html">
+            <section class="logo">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="./images/logo-large.png" />
+                  <source media="(min-width: 700px)" srcset="./images/logo-medium.png" />
+                  <source media="(min-width: 0px)" srcset="./images/logo-small.png" />
+                  <img src="./images/logo-small.png" class="me" alt="logo-small" />
+                </picture>
+        
+              </section>
+              </a>
+              
         <div class="case-study">
           <div class="overview__new">SoundCloud Redesign</div>
           <div class="case-study__top-container">
@@ -64,21 +54,6 @@
             </div>
           </div>
           </div>
-    
-          <!--
-          <div class="case-study__process-part">
-            <h3>Process</h3>
-            <h4>User Persona</h4>
-            <p>Paragraph text</p>
-            <picture>
-              <source media="(min-width: 1200px)" srcset="./images/lisa-large.jpg" />
-              <source media="(min-width: 700px)" srcset="./images/lisa-medium.jpg" />
-              <source media="(min-width: 0px)" srcset="./images/lisa-small.jpg" />
-              <img src="./images/lisa-small.jpg" class="insta-img" alt="lisa-small" />
-            </picture>
-          </div>
-    
-           -->
         </div>
     
     </main>
@@ -542,23 +517,10 @@
       </picture>
     </section>
 
+    <center>
+        <div class="hr2"> <hr> </div>
     <div class="contact__res">Contact Me:</div>
       <div class="mail">sd3525@drexel.edu</div>
-      <div class="container">
-        <a href="https://www.instagram.com/photondesignbysash/">
-          <img
-            src="https://www.sashademo.com/images/instaicon.png"
-            alt="insta"
-          />
-        </a>
-        <div class="image"></div>
-        <a href="https://www.linkedin.com/in/sasha-demo-9277921b7/">
-          <img
-            src="https://www.sashademo.com/images/linkin.png"
-            alt="linkedin"
-          />
-        </a>
-        <div class="image"></div>
-      </div>
+    </center>
   </body>
 </html>
