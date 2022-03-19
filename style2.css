@@ -254,8 +254,9 @@ a:visited {
   .name {
     text-align: center;
     font-family: var(--font-1);
-    font-size: 5rem;
+    font-size: 4rem;
     margin: 2rem;
+    padding-top: 2rem;
   }
 
   .pic {
@@ -392,9 +393,6 @@ a:visited {
     padding-bottom: 1.5rem;
     background-image: linear-gradient(rgb(160, 158, 158) .1rem, transparent .1rem), linear-gradient(90deg, rgb(160, 158, 158) .1rem, transparent .1rem);
     background-size: 2rem 2rem;
-  }
-
-  .cs__card3 {
     margin-top: 2rem;
     background: black;
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(163,43,7,1) 25%, rgba(163,43,7,1) 75%, rgba(0,0,0,1) 100%);
@@ -439,9 +437,8 @@ a:visited {
     font-family: var(--font-1);
   }
 
-  .title {
-    background: rgb(2,0,36);
-    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(17,68,193,1) 28%, rgba(163,43,7,1) 68%, rgba(0,0,0,1) 100%);
+  .title__index {
+    text-align: center;
     padding-top: 0.5rem;
     margin-bottom: 1rem;
     font-size: 2.5rem;
@@ -667,6 +664,17 @@ a:visited {
     z-index: 50;
   }
 
+  .cs__card3 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    background-image: linear-gradient(rgb(160, 158, 158) .1rem, transparent .1rem), linear-gradient(90deg, rgb(160, 158, 158) .1rem, transparent .1rem);
+    background-size: 2rem 2rem;
+    margin-top: 2rem;
+    background: black;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(163,43,7,1) 25%, rgba(163,43,7,1) 75%, rgba(0,0,0,1) 100%);
+  }
+
   .top__text {
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -685,28 +693,25 @@ a:visited {
     text-align: center;
     font-family: var(--font-1);
     font-size: 5rem;
-    margin: 1rem;
+    margin-top: 3.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
   }
 
-  .cs__imgs2 {
-    margin-top: 6rem;
-    margin-left: 1.7rem;
-    margin-right: 1.7rem;
-    background-image: radial-gradient(circle, #c584eb, #ae76e3, #9569db, #7a5dd4, #5a52cc, #404fbc, #254bab, #004699, #004075, #003249, #002024, #080c0b);
+  p.description {
+    font-family: var(--font-2);
+    font-size: 1.3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    line-height: 2rem;
   }
 
   
 
-  p.description {
-    font-family: var(--font-2);
-    font-size: 1.5rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    line-height: 3rem;
-  }
-
   .cs__card__3 {
     /* width: 90%; */
+    display: flex;
  flex-direction: column;
  padding-right: 2rem;
  padding-left: 2rem;
@@ -727,36 +732,6 @@ a:visited {
     padding: 0 auto;
   }
 
-  .article__card2 {
-    /* width: 100%; */
-    flex-direction: row;
-    padding-right: 1rem;
-    padding-left: 0.7rem;
-    padding-bottom: 1rem;
-    background-color: #151515;
-    justify-content: space-between;
-  }
-
-  .cs__card__text2 {
-    margin-left: 1.6rem;
-    margin-right: 1.6rem;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-    background: rgb(0, 0, 0);
-    padding-bottom: 1rem;
-  }
-
- 
-
-  .cs__card2 {
-    flex: 1;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    padding-bottom: 0.8rem;
-    background-image: linear-gradient(rgb(160, 158, 158) .1rem, transparent .1rem), linear-gradient(90deg, rgb(160, 158, 158) .1rem, transparent .1rem);
-    background-size: 2rem 2rem;
-  }
-
   .cs__card__text {
     margin-left: 1.6rem;
     margin-right: 1.6rem;
@@ -770,8 +745,8 @@ a:visited {
     text-align: center;
     padding-top: 0.5rem;
     margin-top: 3rem;
-    padding-top: 5rem;
-    height: 7rem;
+    padding-top: 2rem;
+    height: 5rem;
     padding-bottom: 5rem;
     font-size: 6rem;
     font-family: var(--font-1);
@@ -792,8 +767,9 @@ a:visited {
 
   section.me img {
     width: 350px;
-    padding: 1rem;
+    margin-top: 2rem;
     display: block;
+    padding-top: 1rem;
     padding-bottom: 2rem;
   }
 
@@ -812,14 +788,6 @@ a:visited {
     background-image: linear-gradient(rgb(160, 158, 158) .1rem, transparent .1rem), linear-gradient(90deg, rgb(160, 158, 158) .1rem, transparent .1rem);
     background-size: 2rem 2rem;
     padding-bottom: 2rem;
-  }
-
-  .desc__index {
-    font-family: var(--font-2);
-    font-size: 1.2rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    line-height: 1.5rem;
   }
 
   .button {
@@ -845,10 +813,8 @@ a:visited {
     padding: 0 auto;
   }
 
-  .title {
-    margin-top: 6rem;
-    background: rgb(2,0,36);
-background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(163,43,7,1) 68%, rgba(0,0,0,1) 100%);
+  .title__index {
+    text-align: center;
     font-size: 4rem;
     font-family: bely-display,sans-serif;
 font-weight: 400;
@@ -1081,7 +1047,7 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(232,54,0,1) 27%, rgba
   .name {
     text-align: center;
     font-family: var(--font-1);
-    font-size: 6rem;
+    font-size: 9.5rem;
     padding: 1rem;
   }
 
@@ -1113,9 +1079,10 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(232,54,0,1) 27%, rgba
 
   section.me img {
     width: 500px;
-    margin: 0 auto;
+    margin-top: 2rem;
     display: block;
-    padding: 0 auto;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
   }
 
   /* Insta */
@@ -1123,6 +1090,16 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(232,54,0,1) 27%, rgba
   .title {
     background: rgb(2,0,36);
 background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(163,43,7,1) 68%, rgba(0,0,0,1) 100%);
+    text-align: center;
+    padding-top: 2rem;
+    margin-bottom: 3rem;
+    font-size: 4rem;
+    font-family: bely-display,sans-serif;
+    font-weight: 400;
+  font-style: normal;
+  }
+
+  .title__index {
     text-align: center;
     padding-top: 2rem;
     margin-bottom: 3rem;
@@ -1297,6 +1274,10 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(232,54,0,1) 27%, rgba
     width: 100%;
     }
 
+    .hr2 {
+      padding: 2rem;
+      }
+
     .conclusion2 {
       text-align: center;
       background: rgb(2,0,36);
@@ -1334,7 +1315,7 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(232,54,0,1) 27%, rgba
 
     .desc__index {
       font-family: var(--font-2);
-      font-size: 1.6rem;
+      font-size: 1.7rem;
       padding-left: 2rem;
       padding-right: 2rem;
       line-height: 2.5rem;
