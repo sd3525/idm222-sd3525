@@ -118,17 +118,32 @@ a:visited {
 
 
 
+
 @media screen and (min-width: 0px) {
 
   /* Index */
 
   .name {
+    display: flex;
     text-align: center;
     font-family: var(--font-1);
     font-size: 4rem;
     margin: 2rem;
     padding-top: 2rem;
+    animation: 10s slide-right;
   }
+
+  @keyframes name {
+  from {
+    margin-left: -100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
 
   .pic {
     justify-content: center;
@@ -594,6 +609,19 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(232,54,0,1) 27%, rgba
     margin-left: 1rem;
     margin-right: 1rem;
     margin-bottom: 1rem;
+    animation: 10 sec slide right;
+  }
+
+  @keyframes name {
+    from {
+      margin-left: -100%;
+      width: 300%; 
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
   }
 
   p.description {
@@ -966,6 +994,19 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(232,54,0,1) 27%, rgba
     font-family: var(--font-1);
     font-size: 9.5rem;
     padding: 1rem;
+    animation: Slide_up 2.1s ease;
+  }
+
+  @keyframes name {
+    from {
+      margin-left: -100%;
+      width: 300%; 
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
   }
 
   .cs__card__text {
@@ -1259,3 +1300,5 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(232,54,0,1) 27%, rgba
       justify-content: space-between;
     }
   }
+
+  
