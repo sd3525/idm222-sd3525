@@ -5,8 +5,11 @@
   --text-color: white;
   --font-1: "bely-display";
   --font-2: 'Raleway', sans-serif;;
-  --heading3-padding: 1rem;
 
+}
+
+html {
+  width: 100vw;
 }
 
 body {
@@ -15,9 +18,9 @@ body {
   background: #151515;
   color: white;
   overflow-x: hidden;
-  font-family: bely-display,sans-serif;
-font-weight: 400;
-font-style: normal;
+  font-family: 'raleway' , sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .img {
@@ -37,59 +40,11 @@ font-style: normal;
 }
 
 .logo {
-  width: 50px;
-  height: 50px;
   margin-left: 1rem;
   margin-top: 1.5rem;
 }
 
-.title {
-  font-size: 5rem;
-  padding-left: 2rem;
-  padding-top: 1rem;
-  padding-bottom: 3%;
-  margin-top: 4rem;
-  color: azure;
-}
-
-html {
-  width: 100vw;
-}
-
-body {
-  margin: 0;
-  font-family: raleway,sans-serif;
-  background-color: #151515;
-  color:  white;
-}
-
-.article__card2 {
-  /* width: 100%; */
-  flex-direction: row;
-  padding-right: 2rem;
-  padding-left: 2rem;
-  padding-bottom: 2rem;
-  background-color: #151515;
-  justify-content: space-between;
-}
-
 /* contact */
-
-.container {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 1.5rem;
-  width: 0.68%;
-}
-
-.Contact {
-  font-size: 150%;
-  padding-top: 3.5rem;
-  padding-bottom: 1rem;
-  padding-left: 2rem;
-  color: #1144c1;
-}
-
 .contact__res {
   font-size: 150%;
   padding-top: 3%;
@@ -103,6 +58,8 @@ body {
   padding-bottom: 1.5rem;
 }
 
+/* link stuff */
+
 a:link {
   color:rgb(197, 132, 235);
   background-color: transparent;
@@ -115,9 +72,19 @@ a:visited {
   text-decoration: none;
 }
 
+.name {
+  display: flex;
+  text-align: center;
+  font-family: var(--font-1);
+  font-size: 4rem;
+  margin: 2rem;
+  padding-top: 2rem;
+  animation: Slide_Left 1.4s ease;
+}
 
 
 
+/* Mobile */
 
 @media screen and (min-width: 0px) {
 
@@ -129,50 +96,34 @@ a:visited {
     font-family: var(--font-1);
     font-size: 4rem;
     margin: 2rem;
-    padding-top: 2rem;
-    animation: 10s slide-right;
+    padding-top: 4rem;
+    animation: Slide_Left 1.4s ease;
   }
 
-  @keyframes name {
-  from {
-    margin-left: -100%;
-    width: 300%; 
+  @keyframes Slide_Left {
+    0% {
+      transform: translateX(-400px);
+    }
+    100% {
+      transform: translateX(0);
+    }
   }
 
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
+
+section.me img {
+  width: 300px;
+  margin-bottom: 2rem;
+  margin-right: 2rem;
+  margin-left: 1rem;
+  display: block;
 }
 
-  .pic {
-    justify-content: center;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    padding-bottom: 0.8rem;
-    background-image: linear-gradient(rgb(160, 158, 158) .1rem, transparent .1rem), linear-gradient(90deg, rgb(160, 158, 158) .1rem, transparent .1rem);
-    background-size: 2rem 2rem;
-  }
-
-  video {
-    justify-content: center;
-    padding: 0.5rem;
-
-}
-
-.button {
-  background-color: rgb(197, 132, 235);
-  border: none;
-  color: rgb(14, 0, 24);
-  padding: 0.7rem;
-  font-weight: bold;
-  width: 7rem;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  margin-left: 2rem;
-  font-size: 1rem;
-  font-family: var(--font-1);
+.top__text {
+  overflow: hidden;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-bottom: 0.8rem;
+  background-size: 2rem 2rem;
 }
 
   .cs__card__top {
@@ -208,12 +159,19 @@ a:visited {
     background-image: radial-gradient(circle, #c584eb, #ae76e3, #9569db, #7a5dd4, #5a52cc, #404fbc, #254bab, #004699, #004075, #003249, #002024, #080c0b);
   }
 
-  section.me img {
-    width: 300px;
-    margin-bottom: 2rem;
-    margin-right: 2rem;
-    margin-left: 1rem;
-    display: block;
+  .button {
+    background-color: rgb(197, 132, 235);
+    border: none;
+    color: rgb(14, 0, 24);
+    padding: 0.7rem;
+    font-weight: bold;
+    width: 7rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 2rem;
+    font-size: 1rem;
+    font-family: var(--font-1);
   }
 
   .cs__imgs2 {
@@ -221,6 +179,31 @@ a:visited {
     margin-left: 1.7rem;
     margin-right: 1.7rem;
     background-image: radial-gradient(circle, #c584eb, #e46fcf, #f95bab, #ff4e82, #ff4d57, #ed444e, #db3a45, #c9313d, #982147, #621d42, #31162d, #07010b);
+  }
+
+  .contact__res {
+    font-family: var(--font-1);
+    font-size: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    color: rgb(197, 132, 235);
+  }
+
+  .mail {
+    font-family: var(--font-2);
+    padding-left: 2rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+  }
+
+  .image {
+    padding-left: 0.6rem;
   }
 
 
@@ -445,6 +428,40 @@ a:visited {
     width: 100%;
   }
 
+  .box__insta2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    padding-left: 1rem;
+    padding-right: 2rem;
+    align-items: center;
+  }
+
+  .overview__new {
+    font-family: var(--font-1);
+    text-align: center;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(232,54,0,1) 27%, rgba(17,68,193,1) 56%, rgba(232,54,0,1) 79%, rgba(0,0,0,1) 100%);
+    font-size: 3rem;
+    margin-top: 2rem;
+    color: white;
+  }
+
+  .overview2 {
+    font-size: 5rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    color: rgba(232,54,0,1);
+}
+
+.hr {
+  color: rgb(197, 132, 235);
+  display: block;
+  width: 100%;
+  }
+
+  /* Images */
+
   section.insta__img img {
     width: 300px;
     margin: 0 auto;
@@ -494,67 +511,12 @@ a:visited {
     padding: 0 auto;
   }
 
-  .box__insta2 {
-    display: flex;
-    flex-direction: column;
-    margin-left: 2rem;
-    padding-left: 1rem;
-    padding-right: 2rem;
-    align-items: center;
-  }
+ video {
+  justify-content: center;
+  padding: 0.5rem;
 
-  .overview__new {
-    font-family: var(--font-1);
-    text-align: center;
-    background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(232,54,0,1) 27%, rgba(17,68,193,1) 56%, rgba(232,54,0,1) 79%, rgba(0,0,0,1) 100%);
-      font-size: 3rem;
-      margin-top: 2rem;
-      color: white;
-  }
-
-  .overview2 {
-    font-size: 5rem;
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
-    color: rgba(232,54,0,1);
 }
 
-  .vid1 {
-    display: flex;
-  justify-content: center;
- }
-
-.hr {
-  color: rgb(197, 132, 235);
-  display: block;
-  width: 100%;
-  }
-
-  .contact__res {
-    font-family: var(--font-1);
-    font-size: 2rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 2rem;
-    color: rgb(197, 132, 235);
-  }
-
-  .mail {
-    font-family: var(--font-2);
-    padding-left: 2rem;
-    padding-bottom: 1.5rem;
-  }
-
-  .container {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 1.5rem;
-  }
-
-  .image {
-    padding-left: 0.6rem;
-  }
   
 }
 
@@ -565,29 +527,30 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(232,54,0,1) 27%, rgba
 
 
   /* Index */
-  
 
-  .container2 {
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    top: 29px;
-    left: 18px;
-    z-index: 50;
+  .name {
+    text-align: center;
+    font-family: var(--font-1);
+    font-size: 5rem;
+    margin-top: 3.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    animation: Slide_Left 1.4s ease;;
   }
 
-  .cs__card3 {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    padding-bottom: 1.5rem;
-    background-image: linear-gradient(rgb(160, 158, 158) .1rem, transparent .1rem), linear-gradient(90deg, rgb(160, 158, 158) .1rem, transparent .1rem);
-    background-size: 2rem 2rem;
-    margin-top: 2rem;
-    background: black;
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(163,43,7,1) 25%, rgba(163,43,7,1) 75%, rgba(0,0,0,1) 100%);
+  @keyframes Slide_Left {
+    0% {
+      transform: translateX(-1000px);
+    }
+    100% {
+      transform: translateX(0);
+    }
   }
+
 
   .top__text {
+    overflow: hidden;
     margin-top: 2rem;
     margin-bottom: 2rem;
     padding-bottom: 0.8rem;
@@ -598,30 +561,7 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(232,54,0,1) 27%, rgba
     margin-left: 2rem;
     margin-right: 2rem;
     background-color: #151515;
-      display: flex;
-  }
-
-  .name {
-    text-align: center;
-    font-family: var(--font-1);
-    font-size: 5rem;
-    margin-top: 3.5rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    margin-bottom: 1rem;
-    animation: 10 sec slide right;
-  }
-
-  @keyframes name {
-    from {
-      margin-left: -100%;
-      width: 300%; 
-    }
-  
-    to {
-      margin-left: 0%;
-      width: 100%;
-    }
+    display: flex;
   }
 
   p.description {
@@ -646,8 +586,6 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(232,54,0,1) 27%, rgba
     font-size: 1.3rem;
     font-family: var(--font-1);
   }
-
-  
 
   .cs__card__3 {
     /* width: 90%; */
@@ -705,14 +643,6 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(232,54,0,1) 27%, rgba
     font-family: var(--font-1);
   }
 
-  section.me img {
-    width: 350px;
-    margin-top: 2rem;
-    display: block;
-    padding-top: 1rem;
-    padding-bottom: 2rem;
-  }
-
   .description {
     text-align: center;
     font-family: var(--font-2);
@@ -755,9 +685,8 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(232,54,0,1) 27%, rgba
   .title__index {
     text-align: center;
     font-size: 4rem;
-    font-family: bely-display,sans-serif;
+    font-family: var(--font-1);
     font-weight: 400;
-    font-style: normal;
   }
 
   .box__heading {
@@ -773,9 +702,9 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(232,54,0,1) 27%, rgba
 
   .box1 {
     font-size: 1.2rem;
-    font-family: var(--font-2);;
-font-weight: 400;
-font-style: normal;
+    font-family: var(--font-2);
+    font-weight: 400;
+    font-style: normal;
 
   }
 
@@ -843,20 +772,21 @@ font-style: normal;
 
   .overview {
     background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(232,54,0,1) 27%, rgba(17,68,193,1) 56%, rgba(232,54,0,1) 79%, rgba(0,0,0,1) 100%);
-      font-size: 4rem;
-      margin-top: 0.5rem;
-      color: white;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(232,54,0,1) 27%, rgba(17,68,193,1) 56%, rgba(232,54,0,1) 79%, rgba(0,0,0,1) 100%);
+    font-size: 4rem;
+    margin-top: 0.5rem;
+    color: white;
     }
 
     .conclusion2 {
       background: rgb(2,0,36);
       background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(232,54,0,1) 27%, rgba(17,68,193,1) 56%, rgba(232,54,0,1) 79%, rgba(0,0,0,1) 100%);
-        font-size: 2.5rem;
-        color: white;
-        margin-bottom: 40px;
+      font-size: 2.5rem;
+      color: white;
+      margin-bottom: 40px;
       }
 
+  /* Images */
 
   section.insta__img img {
     width: 450px;
@@ -930,12 +860,6 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(232,54,0,1) 27%, rgba
   justify-content: center;
 }
 
-.vid1 {
-  padding-left: 1rem;
-  display: flex;
-  justify-content: center;
-}
-
 .article__card {
   /* width: 100%; */
   display: flex;
@@ -963,8 +887,8 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(232,54,0,1) 27%, rgba
   display: flex;
   flex-direction: row;
   float: left;
-  font-family: bely-display,sans-serif;
-    font-weight: 400;
+  font-family: var(--font-1);
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -980,13 +904,12 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(232,54,0,1) 27%, rgba
 
 
 @media screen and (min-width: 1200px) {
-
-  .index__insta {
-    width: 800px;
-    margin: 0 auto;
-    display: block;
+  .top__text {
+    overflow: hidden;
     margin-top: 2rem;
-    padding: 0 auto;
+    margin-bottom: 2rem;
+    padding-bottom: 0.8rem;
+    background-size: 2rem 2rem;
   }
 
   .name {
@@ -994,19 +917,32 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(232,54,0,1) 27%, rgba
     font-family: var(--font-1);
     font-size: 9.5rem;
     padding: 1rem;
-    animation: Slide_up 2.1s ease;
+    animation: Slide_Left 1.4s ease;
   }
 
-  @keyframes name {
-    from {
-      margin-left: -100%;
-      width: 300%; 
+  @keyframes Slide_Left {
+    0% {
+      transform: translateX(-4000px);
     }
-  
-    to {
-      margin-left: 0%;
-      width: 100%;
+    100% {
+      transform: translateX(0);
     }
+  }
+
+  section.me img {
+    width: 500px;
+    margin-top: 2rem;
+    display: block;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+
+  .index__insta {
+    width: 800px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 2rem;
+    padding: 0 auto;
   }
 
   .cs__card__text {
@@ -1035,24 +971,16 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(232,54,0,1) 27%, rgba
     line-height: 3rem;
   }
 
-  section.me img {
-    width: 500px;
-    margin-top: 2rem;
-    display: block;
-    padding-top: 1rem;
-    padding-bottom: 2rem;
-  }
-
   /* Insta */
 
   .title {
     background: rgb(2,0,36);
-background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(163,43,7,1) 68%, rgba(0,0,0,1) 100%);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(163,43,7,1) 68%, rgba(0,0,0,1) 100%);
     text-align: center;
     padding-top: 2rem;
     margin-bottom: 3rem;
     font-size: 4rem;
-    font-family: bely-display,sans-serif;
+    font-family: var(--font-1);
     font-weight: 400;
   font-style: normal;
   }
@@ -1062,7 +990,7 @@ background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(163,43,7,1) 68%, rgb
     padding-top: 2rem;
     margin-bottom: 3rem;
     font-size: 4rem;
-    font-family: bely-display,sans-serif;
+    font-family: var(--font-1);
     font-weight: 400;
   font-style: normal;
   }
@@ -1100,10 +1028,10 @@ background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(163,43,7,1) 68%, rgb
   .box__heading {
     color: #1144c1;
     font-size: 3rem;
-    font-family: bely-display,sans-serif;
-font-weight: 400;
-font-style: normal;
-padding-bottom: 0.25rem;
+    font-family: var(--font-1);
+    font-weight: 400;
+    font-style: normal;
+    padding-bottom: 0.25rem;
 
   }
 
@@ -1221,9 +1149,9 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(232,54,0,1) 27%, rgba
     justify-content: flex-start;
     display: flex;
     flex-direction: row;
-    font-family: bely-display,sans-serif;
+    font-family: var(--font-1);
     font-weight: 400;
-  font-style: normal;
+    font-style: normal;
   }
 
   .hr {
@@ -1243,8 +1171,8 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(232,54,0,1) 27%, rgba
       background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(232,54,0,1) 27%, rgba(17,68,193,1) 56%, rgba(232,54,0,1) 79%, rgba(0,0,0,1) 100%);
       font-size: 3.5rem;
       margin-bottom: 40px;
-      color: white;
-      font-family: bely-display,sans-serif;
+      font-style: var(--white-2);
+      font-family: var(--font-1);
       font-weight: 400;
       font-style: normal;
       height: auto;
@@ -1279,8 +1207,7 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(232,54,0,1) 27%, rgba
       padding-right: 2rem;
       line-height: 2.5rem;
     }
-
-    
+ 
 
 }
 
@@ -1290,9 +1217,6 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(232,54,0,1) 27%, rgba
   .case-study__main-image {
     width: 100%;
   }
-
- 
-
 
   @media screen and (min-width: 700px) {
     .case-study__top-container {
